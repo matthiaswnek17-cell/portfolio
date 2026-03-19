@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matthias Wnek – Portfolio BTS SIO SLAM</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#accueil" class="nav-logo">MW.portfolio</a>
+  <ul class="nav-links">
+    <li class="nav-item"><a href="#accueil">Accueil</a></li>
+    <li class="nav-item"><a href="#apropos">À propos</a></li>
+    <li class="nav-item"><a href="#cv">Mon CV</a></li>
+    <li class="nav-item">
+      <a href="#stages">Stages <span class="caret">▾</span></a>
+      <div class="dropdown">
+        <div class="dd-label">Périodes de stage</div>
+        <a onclick="goAndOpen('stages','stage1')">🏛️ Stage 1ère année – DSI Mairie</a>
+        <a onclick="goAndOpen('stages','stage2')">🌐 Stage 2ème année – Agence Nexys</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="#projets">Projets <span class="caret">▾</span></a>
+      <div class="dropdown">
+        <div class="dd-label">1ère année</div>
+        <a onclick="goAndOpen('projets','ap1')">⚽ AP 1 – LFP Gestion Ligue 1</a>
+        <a onclick="goAndOpen('projets','ap2')">🛒 AP 2 – E-Commerce boutique</a>
+        <hr>
+        <div class="dd-label">2ème année</div>
+        <a onclick="goAndOpen('projets','ap3')">📋 AP 3 – Système de ticketing</a>
+        <a onclick="goAndOpen('projets','ap4')">📊 AP 4 – Dashboard RH</a>
+      </div>
+    </li>
+    <li class="nav-item"><a href="#certifications">Certifications</a></li>
+    <li class="nav-item"><a href="#veille">Veille</a></li>
+    <li class="nav-item"><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="accueil">
+  <div class="hero-grid"></div><div class="hero-orb"></div><div class="hero-orb2"></div>
+  <div class="container hero-content">
+    <div class="hero-tag"><div class="hero-dot"></div>BTS SIO – SLAM · Épreuve E4 · Lycée Lamartine Mâcon</div>
+    <h1 class="hero-name">Matthias<br><span>Wnek</span></h1>
+    <p class="hero-sub">Étudiant en <strong>2ème année de BTS SIO SLAM</strong> passionné par le développement web.<br>Futur développeur freelance & créateur d'applications métiers.</p>
+    <div class="hero-cta">
+      <a href="#projets" class="btn-primary">Voir mes projets →</a>
+      <a href="#cv" class="btn-outline">Télécharger mon CV</a>
+    </div>
+    <div class="hero-stack">
+      <div class="hero-stack-item"><div class="stack-dot" style="background:#A78BFA"></div>C# · .NET</div>
+      <div class="hero-stack-item"><div class="stack-dot" style="background:#60A5FA"></div>PHP · Laravel</div>
+      <div class="hero-stack-item"><div class="stack-dot" style="background:#34D399"></div>JavaScript</div>
+      <div class="hero-stack-item"><div class="stack-dot" style="background:#F472B6"></div>HTML/CSS</div>
+      <div class="hero-stack-item"><div class="stack-dot" style="background:#FBBF24"></div>MySQL</div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>scroll</span><div class="scroll-arrow"></div></div>
+</section>
+
+<!-- À PROPOS -->
+<section id="apropos">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-tag">profil</div>
+      <h2 class="section-title">À propos de moi</h2>
+    </div>
+    <div class="apropos-grid">
+      <div class="apropos-card fade-in">
+        <div class="avatar">MW</div>
+        <h3>Matthias Wnek</h3>
+        <div class="role">BTS SIO · SLAM · 2ème année</div>
+        <div class="divider"></div>
+        <div class="info-row"><div class="iico">🏫</div><span>Lycée Lamartine, Mâcon</span></div>
+        <div class="info-row"><div class="iico">📍</div><span>Mâcon, Saône-et-Loire</span></div>
+        <div class="info-row"><div class="iico">🎓</div><span>BTS SIO SLAM – 2024/2026</span></div>
+        <div class="info-row"><div class="iico">💼</div><span>Objectif : Développeur freelance</span></div>
+        <div class="divider"></div>
+        <div class="skills-grid">
+          <span class="skill-tag">C#</span><span class="skill-tag">PHP</span><span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">HTML/CSS</span><span class="skill-tag">MySQL</span><span class="skill-tag">Laravel</span>
+          <span class="skill-tag">Visual Studio</span><span class="skill-tag">Git</span>
+          <span class="skill-tag">WampServer</span><span class="skill-tag">PhpMyAdmin</span>
+          <span class="skill-tag">Figma</span><span class="skill-tag">Merise</span>
+        </div>
+      </div>
+      <div class="apropos-text fade-in">
+        <p>Je m'appelle <strong>Wnek Matthias</strong> et je suis actuellement en formation de BTS Services Informatiques aux Organisations, spécialité <strong>SLAM (Solutions Logicielles et Applications Métiers)</strong>, au sein du lycée Lamartine situé à Mâcon.</p>
+        <p>Ce portfolio professionnel a été élaboré dans le cadre de l'épreuve <strong>E4 « Support et mise à disposition de services informatiques »</strong>. Il regroupe l'ensemble des projets menés durant ma formation ainsi que les missions réalisées lors de mes périodes de stage.</p>
+        <p>Au fil de ces expériences, j'ai acquis des compétences solides en <strong>développement d'applications web</strong>, en <strong>administration de bases de données</strong>, ainsi qu'en <strong>gestion de projets informatiques</strong>. Mon projet professionnel est de me spécialiser dans le développement web et, à terme, de me lancer en <strong>freelance</strong>.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem">
+          <a href="#contact" class="btn-primary" style="font-size:13px;padding:10px 20px">Me contacter →</a>
+          <a href="#cv" class="btn-outline" style="font-size:13px;padding:10px 20px">Mon CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CV -->
+<section id="cv">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-tag">curriculum vitae</div>
+      <h2 class="section-title">Mon CV</h2>
+      <p class="section-subtitle">Aperçu et téléchargement de mon curriculum vitae.</p>
+    </div>
+    <div class="cv-wrapper">
+      <div class="cv-preview fade-in" onclick="openModal('cv')">
+        <div class="cv-preview-inner">
+          <img src="assets/img/cv.PNG" alt="">
+        </div>
+        <div class="cv-overlay"><button class="cv-overlay-btn">👁 Voir en grand</button></div>
+      </div>
+      <div class="cv-info fade-in">
+        <h3>Télécharger mon CV</h3>
+        <p>Mon CV récapitule mon parcours de formation, mes stages, mes compétences techniques et mes projets BTS SIO SLAM. Disponible en PDF, prêt pour toute candidature.</p>
+        <div class="cv-actions">
+          <a class="cv-action-btn" onclick="downloadCV(event)" href="#">
+            <div class="cv-action-icon">📥</div>
+            <div class="cai-info"><strong>Télécharger le CV (PDF)</strong><span>Format A4 · Mise à jour 2026</span></div>
+            <span style="color:var(--muted);margin-left:auto">→</span>
+          </a>
+          <a class="cv-action-btn" onclick="openModal('cv');return false" href="#">
+            <div class="cv-action-icon">🔍</div>
+            <div class="cai-info"><strong>Voir en plein écran</strong><span>Aperçu détaillé dans la fenêtre</span></div>
+            <span style="color:var(--muted);margin-left:auto">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAGES -->
+<section id="stages">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-tag">expériences</div>
+      <h2 class="section-title">Mes stages</h2>
+      <p class="section-subtitle">Cliquez sur un stage pour voir le détail complet des missions.</p>
+    </div>
+    <div class="stages-grid">
+      <div class="stage-card fade-in" onclick="openModal('stage1')">
+        <div class="stage-year">Stage · 1ère année · 2025</div>
+        <h3>Développeur applicatif junior</h3>
+        <div class="stage-company">// Mairie de Mâcon – DSI</div>
+        <p>Intégration à la Direction des Services Informatiques. Maintenance d'applications C#, gestion de tickets et documentation technique.</p>
+        <div class="stage-tags"><span class="stage-tag">C#</span><span class="stage-tag">SQL Server</span><span class="stage-tag">Visual Studio</span><span class="stage-tag">GLPI</span></div>
+        <div class="card-cta">Voir le détail →</div>
+      </div>
+      <div class="stage-card fade-in" onclick="openModal('stage2')">
+        <div class="stage-year">Stage · 2ème année · 2026</div>
+        <h3>Développeur web</h3>
+        <div class="stage-company">// Agence Web Nexys, Mâcon</div>
+        <p>Développement de sites vitrines et applications métiers pour des clients locaux. Full-stack PHP/Laravel + intégration front-end.</p>
+        <div class="stage-tags"><span class="stage-tag">PHP/Laravel</span><span class="stage-tag">JavaScript</span><span class="stage-tag">MySQL</span><span class="stage-tag">Git</span></div>
+        <div class="card-cta">Voir le détail →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section id="projets">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-tag">réalisations</div>
+      <h2 class="section-title">Projets & AP</h2>
+      <p class="section-subtitle">Cliquez sur un projet pour voir toutes les informations détaillées.</p>
+    </div>
+    <div class="projets-grid">
+      <div class="projet-card fade-in" onclick="openModal('ap1')">
+        <div class="projet-header"><div class="projet-icon" style="background:rgba(108,99,255,.1)">⚽</div><span class="projet-year-badge">AP 1ère année · 2 janv. 2025 à 13 mars 2025</span></div>
+        <div class="projet-body">
+          <h3>LFP – Ligue 1 (Phase 1)</h3>
+          <p>Application C# de gestion du planning des matchs et résultats du championnat de Ligue de Football Professionnel en C#.</p>
+          <div class="projet-techs"><span class="tech-badge a">C#</span><span class="tech-badge">Visual Studio</span><span class="tech-badge">MySQL</span><span class="tech-badge">WampServer</span></div>
+          <div class="card-cta" style="margin-top:1rem">Voir le détail →</div>
+        </div>
+      </div>
+      <div class="projet-card fade-in" onclick="openModal('ap2')">
+        <div class="projet-header"><div class="projet-icon" style="background:rgba(0,212,168,.1)">⚽</div><span class="projet-year-badge">AP 1ère année · 20 mars 2025 à 15 mai 2025</span></div>
+        <div class="projet-body">
+          <h3>LFP – Ligue 1 (Phase 2)</h3>
+          <p>Application web affichant les informations des club ainsi qu'un système de création de compte et authentification</p>
+          <div class="projet-techs"><span class="tech-badge a2">PHP/HTML/CSS</span><span class="tech-badge">Visual Studio Code</span><span class="tech-badge">WampServer</span><span class="tech-badge">MySQL</span></div>
+          <div class="card-cta" style="margin-top:1rem">Voir le détail →</div>
+        </div>
+      </div>
+      <div class="projet-card fade-in" onclick="openModal('ap3')">
+        <div class="projet-header"><div class="projet-icon" style="background:rgba(251,191,36,.1)">🚗</div><span class="projet-year-badge">AP 2ème année · 10 sept. 2025 à 5 nov. 2025</span></div>
+        <div class="projet-body">
+          <h3>ADA Location de véhicules Phase (Phase 1)</h3>
+          <p>Application C# de gestion d'agence ADA, création et suppression d’un client et visualisation de tous les contrats de location </p>
+          <div class="projet-techs"><span class="tech-badge a">C#</span><span class="tech-badge a2">MySQL</span><span class="tech-badge">Visual Studio</span><span class="tech-badge">WampServer</span></div>
+          <div class="card-cta" style="margin-top:1rem">Voir le détail →</div>
+        </div>
+      </div>
+      <div class="projet-card fade-in" onclick="openModal('ap4')">
+        <div class="projet-header"><div class="projet-icon" style="background:rgba(255,107,107,.1)">🚗</div><span class="projet-year-badge">AP 2ème année · 12 nov. 2025 à 19 déc. 2025</span></div>
+        <div class="projet-body">
+          <h3>ADA Location de véhicules Phase (Phase 2)</h3>
+          <p>Application web de visualisations des informations de l'agence, création d'un compte client et réservation de location en temps que client.</p>
+          <div class="projet-techs"><span class="tech-badge a">PHP/HTML/CSS/JS</span><span class="tech-badge a2">Laravel</span><span class="tech-badge">Visual Studio Code</span><span class="tech-badge">WampServer</span></div>
+          <div class="card-cta" style="margin-top:1rem">Voir le détail →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-tag">accréditations</div>
+      <h2 class="section-title">Certifications</h2>
+    </div>
+    <div class="certif-grid">
+      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(108,99,255,.1);color:var(--accent)">PIX</div><h4>Certification Pix</h4><div class="certif-issuer">// GIP Pix</div><div class="certif-level" style="background:rgba(108,99,255,.1);color:var(--accent)"><span class="level-star">★★★★</span> Avancé</div><div class="certif-obtained">Juin 2025</div></div>
+      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(0,212,168,.1);color:var(--accent2)">GCP</div><h4>Google Cloud Fundamentals</h4><div class="certif-issuer">// Google Cloud Skills</div><div class="certif-level" style="background:rgba(0,212,168,.1);color:var(--accent2)"><span class="level-star">★★★</span> Intermédiaire</div><div class="certif-obtained">Mars 2025</div></div>
+      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(59,130,246,.1);color:#60A5FA">MS</div><h4>Microsoft 365 Fundamentals</h4><div class="certif-issuer">// Microsoft Learn</div><div class="certif-level" style="background:rgba(59,130,246,.1);color:#60A5FA"><span class="level-star">★★★</span> Intermédiaire</div><div class="certif-obtained">Novembre 2024</div></div>
+      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(251,191,36,.1);color:#FBBF24">JS</div><h4>JavaScript Algorithms & DS</h4><div class="certif-issuer">// freeCodeCamp</div><div class="certif-level" style="background:rgba(251,191,36,.1);color:#FBBF24"><span class="level-star">★★★★</span> Avancé</div><div class="certif-obtained">Janvier 2026</div></div>
+      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(255,107,107,.1);color:var(--accent3)">RWD</div><h4>Responsive Web Design</h4><div class="certif-issuer">// freeCodeCamp</div><div class="certif-level" style="background:rgba(255,107,107,.1);color:var(--accent3)"><span class="level-star">★★★</span> Intermédiaire</div><div class="certif-obtained">Septembre 2024</div></div>
+      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(52,211,153,.1);color:#34D399">SQL</div><h4>Bases de données relationnelles</h4><div class="certif-issuer">// OpenClassrooms</div><div class="certif-level" style="background:rgba(52,211,153,.1);color:#34D399"><span class="level-star">★★★</span> Intermédiaire</div><div class="certif-obtained">Mai 2025</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VEILLE -->
+<section id="veille">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-tag">actualités tech</div>
+      <h2 class="section-title">Veille technologique</h2>
+      <p class="section-subtitle">Sujet : Intelligence Artificielle appliquée au développement web.</p>
+    </div>
+    <div class="veille-layout">
+      <div class="veille-main fade-in">
+        <div class="veille-featured">
+          <div class="veille-topic-tag">🔍 Sujet de veille · 2024–2026</div>
+          <h3>L'IA générative au service du développement logiciel : révolution ou outil d'appoint ?</h3>
+          <p>Ma veille porte sur l'intégration de l'IA générative dans les pratiques de développement web. J'observe l'émergence d'outils comme GitHub Copilot, ChatGPT ou les LLM open-source dans les workflows de développement — une thématique au cœur des transformations actuelles du métier.</p>
+        </div>
+        <div>
+          <div class="veille-article"><div class="article-num">01</div><div class="article-text"><strong>GitHub Copilot dépasse 1 million d'abonnés payants</strong><span>The Verge · Mars 2025</span></div></div>
+          <div class="veille-article"><div class="article-num">02</div><div class="article-text"><strong>Laravel 11 intègre des helpers IA natifs</strong><span>Laravel News · Oct 2025</span></div></div>
+          <div class="veille-article"><div class="article-num">03</div><div class="article-text"><strong>Stack Overflow Survey 2025 : 72% des devs utilisent l'IA</strong><span>Stack Overflow · Juin 2025</span></div></div>
+          <div class="veille-article"><div class="article-num">04</div><div class="article-text"><strong>Faut-il former les étudiants avec l'IA dès le lycée ?</strong><span>Le Monde Informatique · Nov 2025</span></div></div>
+          <div class="veille-article"><div class="article-num">05</div><div class="article-text"><strong>Modèles open-source vs solutions propriétaires</strong><span>Dev.to · Jan 2026</span></div></div>
+        </div>
+      </div>
+      <div class="veille-tools fade-in">
+        <p style="font-size:13px;color:var(--muted);margin-bottom:1rem;font-family:var(--mono)">// outils de veille utilisés</p>
+        <div class="veille-tool"><div class="tool-header"><span style="font-size:18px">📰</span><div class="tool-name">Feedly</div></div><div class="tool-desc">Agrégateur RSS pour suivre les blogs tech, publications et newsletters spécialisées.</div></div>
+        <div class="veille-tool"><div class="tool-header"><span style="font-size:18px">🐙</span><div class="tool-name">GitHub Trending</div></div><div class="tool-desc">Suivi des dépôts open-source populaires liés aux LLM et aux outils IA.</div></div>
+        <div class="veille-tool"><div class="tool-header"><span style="font-size:18px">💼</span><div class="tool-name">LinkedIn</div></div><div class="tool-desc">Publications de développeurs et experts. Tendances métiers du secteur informatique.</div></div>
+        <div class="veille-tool"><div class="tool-header"><span style="font-size:18px">🧵</span><div class="tool-name">Twitter / X</div></div><div class="tool-desc">Comptes Microsoft, Google, OpenAI pour les annonces en temps réel.</div></div>
+        <div class="veille-tool"><div class="tool-header"><span style="font-size:18px">📺</span><div class="tool-name">YouTube Tech</div></div><div class="tool-desc">Fireship, Traversy Media – démos des nouveaux frameworks et outils.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-intro fade-in">
+        <h2>Parlons de votre <span>projet</span></h2>
+        <p>Disponible pour un stage, une alternance ou un projet freelance.</p>
+        <div class="contact-links">
+          <a href="mailto:matthias.wnek@gmail.com" class="contact-link"><div class="cl-icon">✉️</div><div style="flex:1"><div class="cl-label">Email</div><div class="cl-value">matthias.wnek@gmail.com</div></div><span style="color:var(--muted)">→</span></a>
+          <a href="https://www.linkedin.com/in/matthias-wnek" target="_blank" class="contact-link"><div class="cl-icon">🔗</div><div style="flex:1"><div class="cl-label">LinkedIn</div><div class="cl-value">linkedin.com/in/matthias-wnek</div></div><span style="color:var(--muted)">→</span></a>
+          <a href="https://github.com/matthiaswnek" target="_blank" class="contact-link"><div class="cl-icon">🐙</div><div style="flex:1"><div class="cl-label">GitHub</div><div class="cl-value">github.com/matthiaswnek</div></div><span style="color:var(--muted)">→</span></a>
+        </div>
+      </div>
+      <div class="contact-form fade-in">
+        <p style="font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.5rem">// Envoyer un message</p>
+        <div class="form-group"><label>Nom</label><input type="text" placeholder="Votre nom et prénom"></div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="votre@email.com"></div>
+        <div class="form-group"><label>Sujet</label><input type="text" placeholder="Objet du message"></div>
+        <div class="form-group"><label>Message</label><textarea placeholder="Décrivez votre projet ou demande..."></textarea></div>
+        <button class="btn-primary" style="width:100%;justify-content:center" onclick="alert('Pour activer l\'envoi, connectez un service email (Formspree, EmailJS…)')">Envoyer →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">matthias.wnek · BTS SIO SLAM · 2026</div>
+  <div style="font-size:12px;color:var(--muted)">Portfolio professionnel – Épreuve E4 · Lycée Lamartine, Mâcon</div>
+</footer>
+
+<!-- ══════════ MODALES ══════════ -->
+
+<!-- CV -->
+<div class="modal-backdrop" id="modal-cv" onclick="closeBack(event,'modal-cv')">
+  <div class="modal cv-modal">
+    <div class="modal-top">
+      <button class="modal-close" onclick="closeModal('modal-cv')">✕</button>
+      <div class="modal-tag">curriculum vitae</div>
+      <div class="modal-title">Mon CV</div>
+      <div class="modal-subtitle">// Matthias Wnek · BTS SIO SLAM · 2026</div>
+    </div>
+    <div class="modal-body">
+      <div class="cv-placeholder"> 
+        <img src="assets/img/cv.PNG" alt="">
+      </div>
+      <div style="display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;margin-top:.5rem">
+        <button class="btn-outline" style="font-size:13px;padding:10px 20px" onclick="downloadCV(event)">📥 Télécharger PDF</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STAGE 1 -->
+<div class="modal-backdrop" id="modal-stage1" onclick="closeBack(event,'modal-stage1')">
+  <div class="modal">
+    <div class="modal-top">
+      <button class="modal-close" onclick="closeModal('modal-stage1')">✕</button>
+      <div class="modal-header-icon" style="background:rgba(108,99,255,.12)">🏛️</div>
+      <div class="modal-tag">stage · 1ère année · 5 semaines · janvier 2025</div>
+      <div class="modal-title">Développeur applicatif junior</div>
+      <div class="modal-subtitle">// Mairie de Mâcon – Direction des Services Informatiques</div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-grid">
+        <div class="mg-item"><div class="mg-label">Entreprise</div><div class="mg-value">Mairie de Mâcon – DSI</div></div>
+        <div class="mg-item"><div class="mg-label">Durée</div><div class="mg-value">5 semaines · Janv. 2025</div></div>
+        <div class="mg-item"><div class="mg-label">Lieu</div><div class="mg-value">Mâcon, Saône-et-Loire</div></div>
+        <div class="mg-item"><div class="mg-label">Secteur</div><div class="mg-value">Collectivité territoriale</div></div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Contexte & missions</div>
+        <p>J'ai intégré la <strong>Direction des Services Informatiques de la Mairie de Mâcon</strong>, une équipe de 4 techniciens gérant l'ensemble du parc informatique de la collectivité (environ 200 postes). Ma mission principale consistait à <strong>participer à la maintenance et à l'évolution d'une application de gestion administrative</strong> développée en C# sous Visual Studio, ainsi qu'à assurer une partie du support utilisateur.</p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Tâches réalisées</div>
+        <ul class="modal-list">
+          <li>Analyse et correction de bugs dans l'application C# de gestion des congés</li>
+          <li>Ajout d'une fonctionnalité de filtrage avancé dans les tableaux de données</li>
+          <li>Gestion et traitement de tickets d'assistance utilisateurs via GLPI</li>
+          <li>Rédaction d'une documentation technique des procédures internes</li>
+          <li>Participation à l'inventaire et à la mise à jour du parc matériel</li>
+          <li>Sauvegarde et restauration de bases de données SQL Server</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Technologies utilisées</div>
+        <div class="modal-badges">
+          <span class="modal-badge ac">C#</span><span class="modal-badge ac">Visual Studio</span>
+          <span class="modal-badge a2">SQL Server</span><span class="modal-badge">GLPI</span>
+          <span class="modal-badge">Windows Server</span><span class="modal-badge">Active Directory</span>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Compétences acquises (référentiel BTS SIO)</div>
+        <ul class="modal-list">
+          <li>1.1 – Recenser et identifier les ressources numériques</li>
+          <li>2.3 – Traiter des demandes concernant les applications</li>
+          <li>3.2 – Gérer des incidents et des demandes d'assistance</li>
+          <li>5.1 – Réaliser les tests d'intégration d'un service</li>
+          <li>5.3 – Accompagner les utilisateurs dans la mise en place d'un service</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Bilan</div>
+        <p>Ce premier stage m'a permis de découvrir le contexte d'une DSI en collectivité et de mettre en pratique mes acquis en C#. Travailler sur un code existant et s'adapter aux contraintes d'un environnement de production m'a beaucoup appris sur la rigueur nécessaire en milieu professionnel.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STAGE 2 -->
+<div class="modal-backdrop" id="modal-stage2" onclick="closeBack(event,'modal-stage2')">
+  <div class="modal">
+    <div class="modal-top">
+      <button class="modal-close" onclick="closeModal('modal-stage2')">✕</button>
+      <div class="modal-header-icon" style="background:rgba(0,212,168,.1)">🌐</div>
+      <div class="modal-tag">stage · 2ème année · 6 semaines · février 2026</div>
+      <div class="modal-title">Développeur web</div>
+      <div class="modal-subtitle">// Agence Web Nexys – Mâcon</div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-grid">
+        <div class="mg-item"><div class="mg-label">Entreprise</div><div class="mg-value">Agence Web Nexys</div></div>
+        <div class="mg-item"><div class="mg-label">Durée</div><div class="mg-value">6 semaines · Fév. 2026</div></div>
+        <div class="mg-item"><div class="mg-label">Lieu</div><div class="mg-value">Mâcon, Saône-et-Loire</div></div>
+        <div class="mg-item"><div class="mg-label">Secteur</div><div class="mg-value">Agence digitale / Web</div></div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Contexte & missions</div>
+        <p>J'ai rejoint l'<strong>Agence Web Nexys</strong>, une agence de 8 personnes spécialisée dans la création de sites web et d'applications métiers pour des PME et associations locales. Mes missions portaient sur le <strong>développement full-stack</strong> : intégration HTML/CSS/JS et développement back-end en PHP avec Laravel.</p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Projets clients réalisés</div>
+        <ul class="modal-list">
+          <li>Refonte du site vitrine d'une association sportive locale (HTML/CSS/JS)</li>
+          <li>Développement d'un module de réservation en ligne pour un cabinet médical (Laravel)</li>
+          <li>Intégration de maquettes Figma en pages HTML/CSS responsive</li>
+          <li>Mise en place d'un système d'authentification JWT pour une application client</li>
+          <li>Optimisation SEO et performances d'un site e-commerce existant</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Technologies utilisées</div>
+        <div class="modal-badges">
+          <span class="modal-badge ac">PHP / Laravel</span><span class="modal-badge a2">JavaScript</span>
+          <span class="modal-badge a2">HTML / CSS</span><span class="modal-badge">MySQL</span>
+          <span class="modal-badge">Git / GitHub</span><span class="modal-badge">Figma</span>
+          <span class="modal-badge">JWT</span><span class="modal-badge">REST API</span>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Compétences acquises</div>
+        <ul class="modal-list">
+          <li>2.3 – Traiter des demandes concernant les applications</li>
+          <li>4.1 – Analyser les objectifs et les modalités d'un projet</li>
+          <li>4.2 – Planifier les activités</li>
+          <li>5.2 – Déployer un service</li>
+          <li>5.3 – Accompagner les utilisateurs dans la mise en place d'un service</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Bilan</div>
+        <p>Ce second stage a confirmé mon souhait de travailler dans le développement web. Travailler en agence m'a appris à gérer plusieurs projets simultanément, à respecter les délais clients et à utiliser Git en équipe de manière professionnelle.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AP 1 -->
+<div class="modal-backdrop" id="modal-ap1" onclick="closeBack(event,'modal-ap1')">
+  <div class="modal">
+    <div class="modal-top">
+      <button class="modal-close" onclick="closeModal('modal-ap1')">✕</button>
+      <div class="modal-header-icon" style="background:rgba(24,95,165,.12)">⚽</div>
+      <div class="modal-tag">ap · 1ère année · projet 1 · jan–mars 2025</div>
+      <div class="modal-title">LFP – Gestion Ligue 1</div>
+      <div class="modal-subtitle">// Ligue de Football Professionnel · Application C#</div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-grid">
+        <div class="mg-item"><div class="mg-label">Client fictif</div><div class="mg-value">LFP</div></div>
+        <div class="mg-item"><div class="mg-label">Période</div><div class="mg-value">2 jan. → 13 mars 2025</div></div>
+        <div class="mg-item"><div class="mg-label">Langage</div><div class="mg-value">C# · .NET</div></div>
+        <div class="mg-item"><div class="mg-label">BDD</div><div class="mg-value">MySQL · PhpMyAdmin</div></div>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">Contexte</div>
+        <p>La société de services informatiques a été retenue comme prestataire pour développer et maintenir les applications de la <strong>LFP (Ligue de Football Professionnel)</strong>. Le projet porte sur la gestion du calendrier des rencontres et des résultats du championnat de Ligue 1, ainsi que leur diffusion sur internet.</p>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">Objectifs</div>
+        <ul class="modal-list">
+          <li>Développer et maintenir les applications de la LFP</li>
+          <li>Gérer le calendrier des rencontres et les résultats du championnat de Ligue 1</li>
+          <li>Participer au développement de l'application sous Visual Studio C#</li>
+          <li>Analyser les spécifications techniques pour concevoir et développer le logiciel</li>
+          <li>Tester et intégrer en continu la solution développée</li>
+          <li>Accompagner l'application d'une documentation écrite et structurée</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">Fonctionnalités réalisées</div>
+        <p><strong>User story n°1 :</strong> Classement des clubs à l'issue de la dernière journée — affichage selon les points et la différence de buts.</p>
+        <p><strong>User story n°2 :</strong> Visualisation et modification des informations d'un club — consultation et mise à jour des données.</p>
+        <p><strong>User story n°4 :</strong> Ajout d'une rencontre dans le calendrier — saisie d'un nouveau match avec date, heure et sélection des deux clubs disponibles.</p>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">Technologies & outils</div>
+        <div class="modal-badges">
+          <span class="modal-badge ac">C#</span>
+          <span class="modal-badge ac">Visual Studio</span>
+          <span class="modal-badge a2">WampServer</span>
+          <span class="modal-badge a2">MySQL</span>
+          <span class="modal-badge">.NET</span>
+          <span class="modal-badge">PhpMyAdmin</span>
+          <span class="modal-badge">Git</span>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">Compétences BTS SIO acquises</div>
+        <ul class="modal-list">
+          <li>1.1 – Recenser et identifier les ressources numériques</li>
+          <li>2.3 – Traiter des demandes concernant les applications</li>
+          <li>4.1 – Analyser les objectifs et les modalités d'organisation d'un projet</li>
+          <li>4.2 – Planifier les activités</li>
+          <li>4.3 – Évaluer les indicateurs de suivi d'un projet et analyser les écarts</li>
+          <li>5.1 – Réaliser les tests d'intégration et d'acceptation d'un service</li>
+          <li>5.2 – Déployer un service</li>
+          <li>5.3 – Accompagner les utilisateurs dans la mise en place d'un service</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <a href="#" class="modal-download-btn">Télécharger le compte rendu</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AP 2 -->
+<div class="modal-backdrop" id="modal-ap2" onclick="closeBack(event,'modal-ap2')">
+  <div class="modal">
+    <div class="modal-top">
+      <button class="modal-close" onclick="closeModal('modal-ap2')">✕</button>
+      <div class="modal-header-icon" style="background:rgba(108,99,255,.12)">🌐</div>
+      <div class="modal-tag">ap · 1ère année · projet 2 · mars–mai 2025</div>
+      <div class="modal-title">LFP – Site Internet Ligue 1</div>
+      <div class="modal-subtitle">// Ligue de Football Professionnel · Application web PHP</div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-grid">
+        <div class="mg-item"><div class="mg-label">Client fictif</div><div class="mg-value">LFP</div></div>
+        <div class="mg-item"><div class="mg-label">Période</div><div class="mg-value">20 mars → 15 mai 2025</div></div>
+        <div class="mg-item"><div class="mg-label">Langage</div><div class="mg-value">PHP · JS · HTML · CSS</div></div>
+        <div class="mg-item"><div class="mg-label">BDD</div><div class="mg-value">MySQL · PhpMyAdmin</div></div>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">Contexte</div>
+        <p>La <strong>LFP (Ligue de Football Professionnel)</strong> souhaitait développer son site internet afin de permettre aux internautes de visualiser tous les clubs, les rencontres et les scores, et d'inscrire leurs commentaires. Ce site assure la diffusion en ligne des informations du championnat de Ligue 1.</p>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">Objectifs</div>
+        <ul class="modal-list">
+          <li>Afficher les informations sur les clubs</li>
+          <li>Afficher le calendrier des rencontres et les scores</li>
+          <li>Permettre l'ajout de commentaires par les internautes</li>
+          <li>Diffuser en ligne les informations du championnat de Ligue 1</li>
+          <li>Tester, intégrer en continu et documenter la solution</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">Fonctionnalités réalisées</div>
+        <p><strong>User story n°2 :</strong> Affichage des informations d'un club — consultation de la fiche détaillée de chaque club.</p>
+        <p><strong>User story n°4 :</strong> Création d'un compte — inscription des internautes avec formulaire dédié.</p>
+        <p><strong>User story n°5 :</strong> Authentification — connexion sécurisée des utilisateurs inscrits.</p>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">Technologies & outils</div>
+        <div class="modal-badges">
+          <span class="modal-badge ac">PHP</span>
+          <span class="modal-badge ac">HTML</span>
+          <span class="modal-badge ac">CSS</span>
+          <span class="modal-badge ac">JavaScript</span>
+          <span class="modal-badge a2">WampServer</span>
+          <span class="modal-badge a2">MySQL</span>
+          <span class="modal-badge">PhpMyAdmin</span>
+          <span class="modal-badge">Sublime Text</span>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <div class="ms-title">Compétences BTS SIO acquises</div>
+        <ul class="modal-list">
+          <li>1.1 – Recenser et identifier les ressources numériques</li>
+          <li>2.3 – Traiter des demandes concernant les applications</li>
+          <li>3.3 – Participer à l'évolution d'un site Web exploitant les données de l'organisation</li>
+          <li>4.1 – Analyser les objectifs et les modalités d'organisation d'un projet</li>
+          <li>5.1 – Réaliser les tests d'intégration et d'acceptation d'un service</li>
+          <li>5.2 – Déployer un service</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AP 3 -->
+<div class="modal-backdrop" id="modal-ap3" onclick="closeBack(event,'modal-ap3')">
+  <div class="modal">
+    <div class="modal-top">
+      <button class="modal-close" onclick="closeModal('modal-ap3')">✕</button>
+      <div class="modal-header-icon" style="background:rgba(251,191,36,.1)">📋</div>
+      <div class="modal-tag">ap · 2ème année · projet 1 · sept–nov 2025</div>
+      <div class="modal-title">Système de Ticketing</div>
+      <div class="modal-subtitle">// Service informatique interne · Laravel / PHP</div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-grid">
+        <div class="mg-item"><div class="mg-label">Client fictif</div><div class="mg-value">Entreprise multi-sites</div></div>
+        <div class="mg-item"><div class="mg-label">Période</div><div class="mg-value">Sept. → Nov. 2025</div></div>
+        <div class="mg-item"><div class="mg-label">Framework</div><div class="mg-value">Laravel 11</div></div>
+        <div class="mg-item"><div class="mg-label">BDD</div><div class="mg-value">MySQL</div></div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Contexte</div>
+        <p>Une entreprise multi-sites souhaitait remplacer sa gestion des incidents par email par une <strong>application web de ticketing centralisée</strong>. L'objectif était de permettre aux employés de soumettre des tickets d'incident et aux techniciens de les traiter avec un suivi complet.</p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Fonctionnalités réalisées</div>
+        <ul class="modal-list">
+          <li>Création de tickets avec niveau de priorité (Faible / Moyen / Urgent)</li>
+          <li>Attribution automatique et manuelle aux techniciens disponibles</li>
+          <li>Suivi du statut : Ouvert → En cours → Résolu → Fermé</li>
+          <li>Tableau de bord technicien avec indicateurs de charge de travail</li>
+          <li>Notifications par email à chaque changement de statut</li>
+          <li>Historique complet des actions par ticket avec horodatage</li>
+          <li>Gestion des rôles : Administrateur / Technicien / Utilisateur</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Technologies</div>
+        <div class="modal-badges">
+          <span class="modal-badge ac">Laravel 11</span><span class="modal-badge ac">PHP 8.2</span>
+          <span class="modal-badge a2">Bootstrap 5</span><span class="modal-badge">MySQL</span>
+          <span class="modal-badge">Git / GitHub</span><span class="modal-badge">Blade</span>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Compétences BTS SIO acquises</div>
+        <ul class="modal-list">
+          <li>2.3 – Traiter des demandes concernant les applications</li>
+          <li>3.2 – Gérer des incidents et des demandes d'assistance</li>
+          <li>4.1 – Analyser les objectifs et les modalités d'un projet</li>
+          <li>4.2 – Planifier les activités</li>
+          <li>5.1 – Réaliser les tests d'intégration et d'acceptation d'un service</li>
+          <li>5.2 – Déployer un service</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AP 4 -->
+<div class="modal-backdrop" id="modal-ap4" onclick="closeBack(event,'modal-ap4')">
+  <div class="modal">
+    <div class="modal-top">
+      <button class="modal-close" onclick="closeModal('modal-ap4')">✕</button>
+      <div class="modal-header-icon" style="background:rgba(255,107,107,.1)">📊</div>
+      <div class="modal-tag">ap · 2ème année · projet 2 · janv–mars 2026</div>
+      <div class="modal-title">Dashboard RH – Suivi employés</div>
+      <div class="modal-subtitle">// PME · Vue.js 3 + Laravel REST API</div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-grid">
+        <div class="mg-item"><div class="mg-label">Client fictif</div><div class="mg-value">PME – Service RH</div></div>
+        <div class="mg-item"><div class="mg-label">Période</div><div class="mg-value">Janv. → Mars 2026</div></div>
+        <div class="mg-item"><div class="mg-label">Front-end</div><div class="mg-value">Vue.js 3 (Composition API)</div></div>
+        <div class="mg-item"><div class="mg-label">Back-end</div><div class="mg-value">Laravel · REST API</div></div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Contexte</div>
+        <p>Une PME de 80 salariés cherchait à <strong>centraliser la gestion RH</strong> dans un tableau de bord intuitif. Le DRH souhaitait suivre en temps réel les congés, absences, formations et évaluer les performances par équipe, sans passer par des tableurs Excel.</p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Fonctionnalités réalisées</div>
+        <ul class="modal-list">
+          <li>Tableau de bord avec KPIs : taux d'absentéisme, congés restants, formations</li>
+          <li>Gestion des congés : demande, validation hiérarchique, calendrier visuel</li>
+          <li>Visualisation avec Chart.js (camemberts, barres, courbes d'évolution)</li>
+          <li>Fiches employés avec historique complet et suivi d'objectifs</li>
+          <li>Export des rapports mensuels au format PDF</li>
+          <li>API REST sécurisée avec tokens Laravel Sanctum</li>
+          <li>Interface SPA fluide (Vue.js 3 + Pinia + Vite)</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Technologies</div>
+        <div class="modal-badges">
+          <span class="modal-badge ac">Vue.js 3</span><span class="modal-badge ac">Laravel Sanctum</span>
+          <span class="modal-badge a2">Chart.js</span><span class="modal-badge a2">REST API</span>
+          <span class="modal-badge">MySQL</span><span class="modal-badge">Pinia</span>
+          <span class="modal-badge">Vite</span><span class="modal-badge">Git</span>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Compétences BTS SIO acquises</div>
+        <ul class="modal-list">
+          <li>2.3 – Traiter des demandes concernant les applications</li>
+          <li>4.1 – Analyser les objectifs et les modalités d'un projet</li>
+          <li>4.2 – Planifier les activités</li>
+          <li>4.3 – Évaluer les indicateurs de suivi d'un projet et analyser les écarts</li>
+          <li>5.1 – Réaliser les tests d'intégration et d'acceptation d'un service</li>
+          <li>5.2 – Déployer un service</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
