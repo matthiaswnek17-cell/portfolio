@@ -20,8 +20,8 @@
       <a href="#stages">Stages <span class="caret">▾</span></a>
       <div class="dropdown">
         <div class="dd-label">Périodes de stage</div>
-        <a onclick="goAndOpen('stages','stage1')">🏛️ Stage 1ère année – DSI Mairie</a>
-        <a onclick="goAndOpen('stages','stage2')">🌐 Stage 2ème année – Agence Nexys</a>
+        <a onclick="goAndOpen('stages','stage1')">⚡ Stage 1ère année – Schneider Electric</a>
+        <a onclick="goAndOpen('stages','stage2')">⚡ Stage 2ème année – Schneider Electric</a>
       </div>
     </li>
     <li class="nav-item">
@@ -29,11 +29,11 @@
       <div class="dropdown">
         <div class="dd-label">1ère année</div>
         <a onclick="goAndOpen('projets','ap1')">⚽ AP 1 – LFP Gestion Ligue 1</a>
-        <a onclick="goAndOpen('projets','ap2')">🛒 AP 2 – E-Commerce boutique</a>
+        <a onclick="goAndOpen('projets','ap2')">🌐 AP 2 – LFP Site Internet</a>
         <hr>
         <div class="dd-label">2ème année</div>
-        <a onclick="goAndOpen('projets','ap3')">📋 AP 3 – Système de ticketing</a>
-        <a onclick="goAndOpen('projets','ap4')">📊 AP 4 – Dashboard RH</a>
+        <a onclick="goAndOpen('projets','ap3')">🚗 AP 3 – ADA Location (Phase 1)</a>
+        <a onclick="goAndOpen('projets','ap4')">🚗 AP 4 – ADA Location (Phase 2)</a>
       </div>
     </li>
     <li class="nav-item"><a href="#certifications">Certifications</a></li>
@@ -46,7 +46,7 @@
 <section id="accueil">
   <div class="hero-grid"></div><div class="hero-orb"></div><div class="hero-orb2"></div>
   <div class="container hero-content">
-    <div class="hero-tag"><div class="hero-dot"></div>BTS SIO – SLAM · Épreuve E4 · Lycée Lamartine Mâcon</div>
+    <div class="hero-tag"><div class="hero-dot"></div>BTS SIO – SLAM · Épreuve e5 · Lycée Lamartine Mâcon</div>
     <h1 class="hero-name">Matthias<br><span>Wnek</span></h1>
     <p class="hero-sub">Étudiant en <strong>2ème année de BTS SIO SLAM</strong> passionné par le développement web.<br>Futur développeur freelance & créateur d'applications métiers.</p>
     <div class="hero-cta">
@@ -87,12 +87,11 @@
           <span class="skill-tag">HTML/CSS</span><span class="skill-tag">MySQL</span><span class="skill-tag">Laravel</span>
           <span class="skill-tag">Visual Studio</span><span class="skill-tag">Git</span>
           <span class="skill-tag">WampServer</span><span class="skill-tag">PhpMyAdmin</span>
-          <span class="skill-tag">Figma</span><span class="skill-tag">Merise</span>
         </div>
       </div>
       <div class="apropos-text fade-in">
         <p>Je m'appelle <strong>Wnek Matthias</strong> et je suis actuellement en formation de BTS Services Informatiques aux Organisations, spécialité <strong>SLAM (Solutions Logicielles et Applications Métiers)</strong>, au sein du lycée Lamartine situé à Mâcon.</p>
-        <p>Ce portfolio professionnel a été élaboré dans le cadre de l'épreuve <strong>E4 « Support et mise à disposition de services informatiques »</strong>. Il regroupe l'ensemble des projets menés durant ma formation ainsi que les missions réalisées lors de mes périodes de stage.</p>
+        <p>Ce portfolio professionnel a été élaboré dans le cadre de l'épreuve <strong>e5 « Support et mise à disposition de services informatiques »</strong>. Il regroupe l'ensemble des projets menés durant ma formation ainsi que les missions réalisées lors de mes périodes de stage.</p>
         <p>Au fil de ces expériences, j'ai acquis des compétences solides en <strong>développement d'applications web</strong>, en <strong>administration de bases de données</strong>, ainsi qu'en <strong>gestion de projets informatiques</strong>. Mon projet professionnel est de me spécialiser dans le développement web et, à terme, de me lancer en <strong>freelance</strong>.</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem">
           <a href="#contact" class="btn-primary" style="font-size:13px;padding:10px 20px">Me contacter →</a>
@@ -120,7 +119,7 @@
       </div>
       <div class="cv-info fade-in">
         <h3>Télécharger mon CV</h3>
-        <p>Mon CV récapitule mon parcours de formation, mes stages, mes compétences techniques et mes projets BTS SIO SLAM. Disponible en PDF, prêt pour toute candidature.</p>
+        <p>Mon CV récapitule mon parcours de formation en BTS SIO option SLAM et mes expériences professionels. Disponible en PDF, prêt pour toute candidature.</p>
         <div class="cv-actions">
           <a class="cv-action-btn" onclick="downloadCV(event)" href="#">
             <div class="cv-action-icon">📥</div>
@@ -147,22 +146,33 @@
       <p class="section-subtitle">Cliquez sur un stage pour voir le détail complet des missions.</p>
     </div>
     <div class="stages-grid">
-      <div class="stage-card fade-in" onclick="openModal('stage1')">
+
+      <!-- Stage 1 card -->
+      <div class="stage-card fade-in">
         <div class="stage-year">Stage · 1ère année · 2025</div>
-        <h3>Développeur applicatif junior</h3>
-        <div class="stage-company">// Mairie de Mâcon – DSI</div>
-        <p>Intégration à la Direction des Services Informatiques. Maintenance d'applications C#, gestion de tickets et documentation technique.</p>
-        <div class="stage-tags"><span class="stage-tag">C#</span><span class="stage-tag">SQL Server</span><span class="stage-tag">Visual Studio</span><span class="stage-tag">GLPI</span></div>
-        <div class="card-cta">Voir le détail →</div>
+        <h3>Développeur d'application C#</h3>
+        <div class="stage-company">// Schneider Electric France - Secteur SI</div>
+        <p>Intégration au secteur informatique de Schneider Electric. Création d'une application Base Documentaire en C#.</p>
+        <div class="stage-tags"><span class="stage-tag">C# .Net</span><span class="stage-tag">Microsoft Management SQL Server</span><span class="stage-tag">Visual Studio</span></div>
+        <div class="stage-card-actions">
+          <button class="card-cta-btn" onclick="openModal('stage1')">Voir le détail →</button>
+          <button class="card-download-btn" onclick="downloadReport('stage1.pdf')">Télécharger compte rendu</button>
+        </div>
       </div>
-      <div class="stage-card fade-in" onclick="openModal('stage2')">
+
+      <!-- Stage 2 card -->
+      <div class="stage-card fade-in">
         <div class="stage-year">Stage · 2ème année · 2026</div>
-        <h3>Développeur web</h3>
-        <div class="stage-company">// Agence Web Nexys, Mâcon</div>
-        <p>Développement de sites vitrines et applications métiers pour des clients locaux. Full-stack PHP/Laravel + intégration front-end.</p>
-        <div class="stage-tags"><span class="stage-tag">PHP/Laravel</span><span class="stage-tag">JavaScript</span><span class="stage-tag">MySQL</span><span class="stage-tag">Git</span></div>
-        <div class="card-cta">Voir le détail →</div>
+        <h3>Développeur d'application C#</h3>
+        <div class="stage-company">// Schneider Electric France - Secteur SI</div>
+        <p>Seconde intégration au secteur informatique de Schneider Electric. Création d'une application de recensement d'étiquettes produits.</p>
+        <div class="stage-tags"><span class="stage-tag">C# .Net</span><span class="stage-tag">Microsoft Management SQL Server</span><span class="stage-tag">Visual Studio</span></div>
+        <div class="stage-card-actions">
+          <button class="card-cta-btn" onclick="openModal('stage2')">Voir le détail →</button>
+          <button class="card-download-btn" onclick="downloadReport('stage2.pdf')">Télécharger compte rendu</button>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -176,42 +186,63 @@
       <p class="section-subtitle">Cliquez sur un projet pour voir toutes les informations détaillées.</p>
     </div>
     <div class="projets-grid">
-      <div class="projet-card fade-in" onclick="openModal('ap1')">
+
+      <!-- AP1 card -->
+      <div class="projet-card fade-in">
         <div class="projet-header"><div class="projet-icon" style="background:rgba(108,99,255,.1)">⚽</div><span class="projet-year-badge">AP 1ère année · 2 janv. 2025 à 13 mars 2025</span></div>
         <div class="projet-body">
           <h3>LFP – Ligue 1 (Phase 1)</h3>
           <p>Application C# de gestion du planning des matchs et résultats du championnat de Ligue de Football Professionnel en C#.</p>
           <div class="projet-techs"><span class="tech-badge a">C#</span><span class="tech-badge">Visual Studio</span><span class="tech-badge">MySQL</span><span class="tech-badge">WampServer</span></div>
-          <div class="card-cta" style="margin-top:1rem">Voir le détail →</div>
+          <div class="projet-card-actions">
+            <button class="card-cta-btn" onclick="openModal('ap1')">Voir le détail →</button>
+            <button class="card-download-btn" onclick="downloadReport('LFP1.pdf')">Télécharger compte rendu</button>
+          </div>
         </div>
       </div>
-      <div class="projet-card fade-in" onclick="openModal('ap2')">
-        <div class="projet-header"><div class="projet-icon" style="background:rgba(0,212,168,.1)">⚽</div><span class="projet-year-badge">AP 1ère année · 20 mars 2025 à 15 mai 2025</span></div>
+
+      <!-- AP2 card -->
+      <div class="projet-card fade-in">
+        <div class="projet-header"><div class="projet-icon" style="background:rgba(0,212,168,.1)">🌐</div><span class="projet-year-badge">AP 1ère année · 20 mars 2025 à 15 mai 2025</span></div>
         <div class="projet-body">
           <h3>LFP – Ligue 1 (Phase 2)</h3>
-          <p>Application web affichant les informations des club ainsi qu'un système de création de compte et authentification</p>
-          <div class="projet-techs"><span class="tech-badge a2">PHP/HTML/CSS</span><span class="tech-badge">Visual Studio Code</span><span class="tech-badge">WampServer</span><span class="tech-badge">MySQL</span></div>
-          <div class="card-cta" style="margin-top:1rem">Voir le détail →</div>
+          <p>Application web affichant les informations des club ainsi qu'un système de création de compte et authentification.</p>
+          <div class="projet-techs"><span class="tech-badge a">PHP/HTML/CSS</span><span class="tech-badge">Visual Studio Code</span><span class="tech-badge">WampServer</span><span class="tech-badge">MySQL</span></div>
+          <div class="projet-card-actions">
+            <button class="card-cta-btn" onclick="openModal('ap2')">Voir le détail →</button>
+            <button class="card-download-btn" onclick="downloadReport('')">Télécharger compte rendu</button>
+          </div>
         </div>
       </div>
-      <div class="projet-card fade-in" onclick="openModal('ap3')">
+
+      <!-- AP3 card -->
+      <div class="projet-card fade-in">
         <div class="projet-header"><div class="projet-icon" style="background:rgba(251,191,36,.1)">🚗</div><span class="projet-year-badge">AP 2ème année · 10 sept. 2025 à 5 nov. 2025</span></div>
         <div class="projet-body">
-          <h3>ADA Location de véhicules Phase (Phase 1)</h3>
-          <p>Application C# de gestion d'agence ADA, création et suppression d’un client et visualisation de tous les contrats de location </p>
+          <h3>ADA Location de véhicules (Phase 1)</h3>
+          <p>Application C# de gestion d'agence ADA, création et suppression d'un client et visualisation de tous les contrats de location.</p>
           <div class="projet-techs"><span class="tech-badge a">C#</span><span class="tech-badge a2">MySQL</span><span class="tech-badge">Visual Studio</span><span class="tech-badge">WampServer</span></div>
-          <div class="card-cta" style="margin-top:1rem">Voir le détail →</div>
+          <div class="projet-card-actions">
+            <button class="card-cta-btn" onclick="openModal('ap3')">Voir le détail →</button>
+            <button class="card-download-btn" onclick="downloadReport('Projet App ADA.pdf')">Télécharger compte rendu</button>
+          </div>
         </div>
       </div>
-      <div class="projet-card fade-in" onclick="openModal('ap4')">
+
+      <!-- AP4 card -->
+      <div class="projet-card fade-in">
         <div class="projet-header"><div class="projet-icon" style="background:rgba(255,107,107,.1)">🚗</div><span class="projet-year-badge">AP 2ème année · 12 nov. 2025 à 19 déc. 2025</span></div>
         <div class="projet-body">
-          <h3>ADA Location de véhicules Phase (Phase 2)</h3>
+          <h3>ADA Location de véhicules (Phase 2)</h3>
           <p>Application web de visualisations des informations de l'agence, création d'un compte client et réservation de location en temps que client.</p>
           <div class="projet-techs"><span class="tech-badge a">PHP/HTML/CSS/JS</span><span class="tech-badge a2">Laravel</span><span class="tech-badge">Visual Studio Code</span><span class="tech-badge">WampServer</span></div>
-          <div class="card-cta" style="margin-top:1rem">Voir le détail →</div>
+          <div class="projet-card-actions">
+            <button class="card-cta-btn" onclick="openModal('ap4')">Voir le détail →</button>
+            <button class="card-download-btn" onclick="downloadReport('Projet ADA PHP.pdf')">Télécharger compte rendu</button>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -224,12 +255,16 @@
       <h2 class="section-title">Certifications</h2>
     </div>
     <div class="certif-grid">
-      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(108,99,255,.1);color:var(--accent)">PIX</div><h4>Certification Pix</h4><div class="certif-issuer">// GIP Pix</div><div class="certif-level" style="background:rgba(108,99,255,.1);color:var(--accent)"><span class="level-star">★★★★</span> Avancé</div><div class="certif-obtained">Juin 2025</div></div>
-      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(0,212,168,.1);color:var(--accent2)">GCP</div><h4>Google Cloud Fundamentals</h4><div class="certif-issuer">// Google Cloud Skills</div><div class="certif-level" style="background:rgba(0,212,168,.1);color:var(--accent2)"><span class="level-star">★★★</span> Intermédiaire</div><div class="certif-obtained">Mars 2025</div></div>
-      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(59,130,246,.1);color:#60A5FA">MS</div><h4>Microsoft 365 Fundamentals</h4><div class="certif-issuer">// Microsoft Learn</div><div class="certif-level" style="background:rgba(59,130,246,.1);color:#60A5FA"><span class="level-star">★★★</span> Intermédiaire</div><div class="certif-obtained">Novembre 2024</div></div>
-      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(251,191,36,.1);color:#FBBF24">JS</div><h4>JavaScript Algorithms & DS</h4><div class="certif-issuer">// freeCodeCamp</div><div class="certif-level" style="background:rgba(251,191,36,.1);color:#FBBF24"><span class="level-star">★★★★</span> Avancé</div><div class="certif-obtained">Janvier 2026</div></div>
-      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(255,107,107,.1);color:var(--accent3)">RWD</div><h4>Responsive Web Design</h4><div class="certif-issuer">// freeCodeCamp</div><div class="certif-level" style="background:rgba(255,107,107,.1);color:var(--accent3)"><span class="level-star">★★★</span> Intermédiaire</div><div class="certif-obtained">Septembre 2024</div></div>
-      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(52,211,153,.1);color:#34D399">SQL</div><h4>Bases de données relationnelles</h4><div class="certif-issuer">// OpenClassrooms</div><div class="certif-level" style="background:rgba(52,211,153,.1);color:#34D399"><span class="level-star">★★★</span> Intermédiaire</div><div class="certif-obtained">Mai 2025</div></div>
+      <div class="certif-card fade-in">
+        <div class="certif-logo" style="background:rgba(108,99,255,.1);color:var(--accent)">PIX</div>
+        <h4>Certification Pix</h4>
+        <img src="assets/img/attestations/pix.PNG" alt="" style="cursor:zoom-in" onclick="openLightbox('assets/img/attestations/pix.PNG', 'Certification Pix – Janvier 2026')">
+        <div class="certif-obtained">Janvier 2026</div>
+      </div>
+      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(0,212,168,.1);color:var(--accent2)">RGPD</div><h4>Atelier RGPD - Module 1</h4><img src="assets/img/attestations/Attest1.PNG" alt="" style="cursor:zoom-in" onclick="openLightbox('assets/img/attestations/Attest1.PNG', 'Atelier RGPD Module 1 ')"><div class="certif-obtained">Octobre 2024</div></div>
+      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(59,130,246,.1);color:#60A5FA">RGPD</div><h4>Atelier RGPD - Module 2</h4><img src="assets/img/attestations/Attest2.PNG" alt="" style="cursor:zoom-in" onclick="openLightbox('assets/img/attestations/Attest2.PNG', 'Atelier RGPD Module 2')"><div class="certif-obtained">Novembre 2024</div></div>
+      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(251,191,36,.1);color:#FBBF24">RGPD</div><h4>Atelier RGPD - Module 3</h4><img src="assets/img/attestations/Attest3.PNG" alt="" style="cursor:zoom-in" onclick="openLightbox('assets/img/attestations/Attest3.PNG', 'Atelier RGPD Module 3 ')"><div class="certif-obtained">Novembre 2024</div></div>
+      <div class="certif-card fade-in"><div class="certif-logo" style="background:rgba(255,107,107,.1);color:var(--accent3)">RGPD</div><h4>Atelier RGPD - Module 4</h4><img src="assets/img/attestations/Attest4.PNG" alt="" style="cursor:zoom-in" onclick="openLightbox('assets/img/attestations/Attest4.PNG', 'Atelier RGPD Module 4')"><div class="certif-obtained">Décembre 2024</div></div>
     </div>
   </div>
 </section>
@@ -240,30 +275,353 @@
     <div class="section-header fade-in">
       <div class="section-tag">actualités tech</div>
       <h2 class="section-title">Veille technologique</h2>
-      <p class="section-subtitle">Sujet : Intelligence Artificielle appliquée au développement web.</p>
+       <div class="veille-tools fade-in">
+        <p style="font-size:13px;color:var(--muted);margin-bottom:1rem;font-family:var(--mono)">// outils de veille utilisés</p>
+        <div class="veille-tool"><div class="tool-header"><span style="font-size:18px">📰</span><div class="tool-name">Feedly</div></div><div class="tool-desc">Agrégateur RSS pour suivre les blogs cybersécurité, les publications spécialisées et les alertes CNIL.</div></div>
+        <div class="veille-tool"><div class="tool-header"><span style="font-size:18px">🔔</span><div class="tool-name">Google Alertes</div></div><div class="tool-desc">Alertes automatiques par e-mail sur des mots-clés ciblés (antivirus, RGPD, cyberattaque…) pour ne manquer aucune actualité.</div></div>
+      </div>
     </div>
     <div class="veille-layout">
       <div class="veille-main fade-in">
         <div class="veille-featured">
+          <h3>Sujet : Antivirus et protection de la vie privée.</h3>
           <div class="veille-topic-tag">🔍 Sujet de veille · 2024–2026</div>
-          <h3>L'IA générative au service du développement logiciel : révolution ou outil d'appoint ?</h3>
-          <p>Ma veille porte sur l'intégration de l'IA générative dans les pratiques de développement web. J'observe l'émergence d'outils comme GitHub Copilot, ChatGPT ou les LLM open-source dans les workflows de développement — une thématique au cœur des transformations actuelles du métier.</p>
+          <h4>1. Organisation de la veille</h4>
+          <p>
+Dans le cadre de ma formation en BTS SIO, j'ai réalisé une veille technologique portant sur les antivirus et leur rapport à la vie privée des utilisateurs. J'ai choisi ce sujet car la sécurité des postes de travail est au cœur des préoccupations des professionnels de l'informatique, tout en soulevant des questions éthiques souvent méconnues.<br>Pour effectuer cette veille, j'ai utilisé Feedly pour agréger plusieurs flux RSS spécialisés, notamment Bleeping Computer, The Hacker News et 01net, ainsi que des publications institutionnelles de la CNIL et de l'ANSSI. La sélection des articles s'est faite selon quatre critères : la récence, la pertinence avec les enjeux de protection des données, l'intérêt technique pour le domaine SIO, et la capacité à illustrer une problématique concrète (collecte de données comportementales, transmission à des tiers, failles dans des logiciels de sécurité). Les articles retenus ont ensuite été classés par axe thématique puis analysés individuellement.<br>          </p>
+          <br>
+          <h4>2. Pourquoi ce sujet est-il pertinent ?</h4>
+          <p>
+            Le thème des antivirus et de la vie privée est particulièrement pertinent pour le BTS SIO, car il se situe à l'intersection de plusieurs compétences clés : sécurité des systèmes, gestion des données personnelles et conformité au RGPD.<br>Avec l'explosion des cyberattaques et des logiciels malveillants, les antivirus sont devenus incontournables. Pourtant, une question fondamentale se pose : ces logiciels qui prétendent nous protéger respectent-ils vraiment notre vie privée ? Le cas Avast, condamné en 2024 par la FTC américaine pour revente de données de navigation via sa filiale Jumpshot, illustre la tension entre le modèle économique des antivirus gratuits et la confidentialité des utilisateurs.<br>Pour un étudiant SIO, cette veille permet de développer un regard critique sur les outils de sécurité, de comprendre leur fonctionnement technique (télémétrie, analyse comportementale, transmission cloud) et de mieux conseiller entreprises et particuliers dans le choix d'une solution alliant performance et respect des données<br>
+          </p>
         </div>
-        <div>
-          <div class="veille-article"><div class="article-num">01</div><div class="article-text"><strong>GitHub Copilot dépasse 1 million d'abonnés payants</strong><span>The Verge · Mars 2025</span></div></div>
-          <div class="veille-article"><div class="article-num">02</div><div class="article-text"><strong>Laravel 11 intègre des helpers IA natifs</strong><span>Laravel News · Oct 2025</span></div></div>
-          <div class="veille-article"><div class="article-num">03</div><div class="article-text"><strong>Stack Overflow Survey 2025 : 72% des devs utilisent l'IA</strong><span>Stack Overflow · Juin 2025</span></div></div>
-          <div class="veille-article"><div class="article-num">04</div><div class="article-text"><strong>Faut-il former les étudiants avec l'IA dès le lycée ?</strong><span>Le Monde Informatique · Nov 2025</span></div></div>
-          <div class="veille-article"><div class="article-num">05</div><div class="article-text"><strong>Modèles open-source vs solutions propriétaires</strong><span>Dev.to · Jan 2026</span></div></div>
-        </div>
-      </div>
-      <div class="veille-tools fade-in">
-        <p style="font-size:13px;color:var(--muted);margin-bottom:1rem;font-family:var(--mono)">// outils de veille utilisés</p>
-        <div class="veille-tool"><div class="tool-header"><span style="font-size:18px">📰</span><div class="tool-name">Feedly</div></div><div class="tool-desc">Agrégateur RSS pour suivre les blogs tech, publications et newsletters spécialisées.</div></div>
-        <div class="veille-tool"><div class="tool-header"><span style="font-size:18px">🐙</span><div class="tool-name">GitHub Trending</div></div><div class="tool-desc">Suivi des dépôts open-source populaires liés aux LLM et aux outils IA.</div></div>
-        <div class="veille-tool"><div class="tool-header"><span style="font-size:18px">💼</span><div class="tool-name">LinkedIn</div></div><div class="tool-desc">Publications de développeurs et experts. Tendances métiers du secteur informatique.</div></div>
-        <div class="veille-tool"><div class="tool-header"><span style="font-size:18px">🧵</span><div class="tool-name">Twitter / X</div></div><div class="tool-desc">Comptes Microsoft, Google, OpenAI pour les annonces en temps réel.</div></div>
-        <div class="veille-tool"><div class="tool-header"><span style="font-size:18px">📺</span><div class="tool-name">YouTube Tech</div></div><div class="tool-desc">Fireship, Traversy Media – démos des nouveaux frameworks et outils.</div></div>
+        <div> 
+<!-- ARTICLE 01 -->
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">01</div>
+    <div class="article-text">
+      <strong>Avast et AVG sur la sellette : ventes de données clients via Jumpshot révélées par Motherboard et PCMag</strong>
+      <span>Le Monde Informatique · Jan. 2020 — <a href="https://www.lemondeinformatique.fr/actualites/lire-ventes-de-donnees-clients-les-antivirus-gratuits-avast-et-avg-sur-la-sellette-77878.html" target="_blank" onclick="event.stopPropagation()">lemondeinformatique.fr</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> Une enquête conjointe de Vice/Motherboard et PCMag révèle qu'Avast et sa filiale AVG collectaient discrètement l'intégralité des historiques de navigation de leurs utilisateurs via leurs antivirus gratuits, puis transmettaient ces données à leur filiale Jumpshot pour les revendre à des clients comme Google, Microsoft ou Pepsi.</p>
+      <p><strong>Analyse en profondeur :</strong> L'article met en lumière le paradoxe central de la cybersécurité grand public : le logiciel censé protéger la vie privée la viole à grande échelle. L'identifiant unique associé à chaque appareil permettait, malgré une pseudo-anonymisation, de reconstituer le profil comportemental précis de chaque utilisateur. Avast a tenté de minimiser en évoquant le RGPD, mais a finalement fermé Jumpshot sous la pression médiatique.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Cas d'école concret pour aborder le principe de minimisation des données (RGPD, art. 5). Il illustre pourquoi un administrateur système doit auditer les flux réseau sortants de ses postes : un antivirus peut très bien être à l'origine d'exfiltrations de données légitimes mais non consenties vers des serveurs tiers.</p>
+    </div>
+  </div>
+</div>
+
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">02</div>
+    <div class="article-text">
+      <strong>Antivirus gratuit AVG : la solution surveille votre activité et la partage</strong>
+      <span>Tom's Guide — <a href="https://www.tomsguide.fr/antivirus-desinstallez-avg-si-vous-tenez-a-votre-vie-privee/" target="_blank" onclick="event.stopPropagation()">tomsguide.fr</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> L'article alerte sur les pratiques d'AVG qui utilise sa version gratuite pour aspirer les termes de recherche, les clics sur les réseaux sociaux et l'historique de navigation. Ces informations sont ensuite packagées et vendues sous forme de "profils comportementaux" à des courtiers en données (data brokers).</p>
+      <p><strong>Analyse en profondeur :</strong> L'intérêt de ce texte est de décortiquer les politiques de confidentialité souvent illisibles. On y apprend que le consentement est enterré sous des termes juridiques complexes. L'article démontre que dans l'écosystème gratuit, l'utilisateur n'est plus le client, mais le produit. La performance technique est ici un prétexte à la collecte de données.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Cette source illustre les mécanismes de monétisation cachés. Elle apprend aux étudiants à ne pas se fier à l'interface d'un logiciel et à enquêter sur les modèles économiques avant de recommander une solution à un utilisateur final.</p>
+    </div>
+  </div>
+</div>
+
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">03</div>
+    <div class="article-text">
+      <strong>Norton 360 : L'antivirus qui mine de la crypto sur le dos des clients</strong>
+      <span>Le Monde Informatique — <a href="https://www.lemondeinformatique.fr/actualites/lire-norton-360-installe-un-mineur-de-crypto-monnaie-chez-ses-clients-85338.html" target="_blank" onclick="event.stopPropagation()">lemondeinformatique.fr</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> Norton a intégré un logiciel de minage de cryptomonnaies dans sa suite de sécurité, prélevant une commission de 15 % sur les gains. Bien que l'activation soit optionnelle, le module est installé d'office, alourdissant le système et posant des questions éthiques majeures sur le rôle d'un logiciel de sécurité.</p>
+      <p><strong>Analyse en profondeur :</strong> Ce texte montre une dérive vers le "Bloatware". Un antivirus doit consommer le moins de ressources possible ; ici, l'éditeur propose d'utiliser 100 % du GPU pour du profit. Cela pose des problèmes de sécurité (usure du matériel, failles potentielles dans le module de minage) et de transparence sur l'usage réel des ressources du client.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> En SISR, cela permet de discuter de l'optimisation des ressources système. En SLAM, cela montre comment des fonctionnalités non sollicitées peuvent dégrader l'expérience utilisateur et la réputation d'un produit logiciel.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 04 -->
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">04</div>
+    <div class="article-text">
+      <strong>Protection des données ou protection antivirus ? L'analyse indépendante d'AV-TEST sur 24 éditeurs</strong>
+      <span>AV-TEST · 2020 — <a href="https://www.av-test.org/fr/nouvelles/protection-des-donnees-ou-protection-antivirus/" target="_blank" onclick="event.stopPropagation()">av-test.org</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> Le laboratoire indépendant AV-TEST a épluché les politiques de confidentialité de 24 éditeurs d'antivirus pour comparer ce qu'ils déclarent collecter et ce qu'ils collectent réellement. Résultat : 5 sur 24 collectent la géolocalisation GPS, 4 recourent à la localisation Wi-Fi, et beaucoup utilisent des formulations floues comme "statistiques d'utilisation" sans définir ce que cela englobe concrètement.</p>
+      <p><strong>Analyse en profondeur :</strong> L'article montre que les antivirus bénéficient d'un capital de confiance élevé de la part des utilisateurs — confiance qui leur est accordée souvent sans contrepartie de transparence réelle. La plupart des gens n'lisent pas les politiques de confidentialité, surtout pour un logiciel de sécurité. Ce rapport révèle que cette confiance aveugle peut être instrumentalisée pour collecter bien plus que nécessaire.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Apprend à distinguer les droits contractuels (ce que l'éditeur peut faire selon la politique de confidentialité) des droits réglementaires (ce que le RGPD autorise). Compétence directement applicable lors de l'évaluation d'un logiciel de sécurité pour une organisation : il faut systématiquement confronter la documentation éditeur aux exigences légales.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 05 -->
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">05</div>
+    <div class="article-text">
+      <strong>Antivirus gratuits Windows 2025 : comparatif vie privée et performances, les vrais critères de choix</strong>
+      <span>P3ter.fr · Fév. 2025 — <a href="https://p3ter.fr/cyber-securite/top-antivirus-gratuits-windows-comparatif-2025" target="_blank" onclick="event.stopPropagation()">p3ter.fr</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> P3ter.fr publie début 2025 un comparatif des antivirus gratuits pour Windows en intégrant le respect de la vie privée comme critère de notation à part entière. L'article documente que de nombreux antivirus gratuits financent leurs serveurs en collectant les données de navigation pour les revendre à des annonceurs, reprenant le modèle déjà dénoncé chez Avast.</p>
+      <p><strong>Analyse en profondeur :</strong> Le comparatif confronte efficacité de détection et politique de données : un antivirus très performant peut être un mauvais choix si sa politique de confidentialité est permissive. L'article montre que même des données "anonymisées" peuvent être croisées pour identifier les individus, rendant le concept d'anonymisation souvent illusoire en pratique.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Démontre l'importance d'une grille d'évaluation multicritère lors du choix d'un outil de sécurité. En entreprise, le critère "respect des données" s'ajoute aux critères techniques classiques (taux de détection, impact sur les performances). C'est une démarche d'analyse des risques appliquée au choix logiciel.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 06 -->
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">06</div>
+    <div class="article-text">
+      <strong>Meilleur antivirus 2026 : Bitdefender à 100 % de détection, les gratuits épinglés pour collecte de données</strong>
+      <span>Clubic · Mars 2026 — <a href="https://www.clubic.com/article-77079-1-guide-comparatif-meilleur-antivirus.html" target="_blank" onclick="event.stopPropagation()">clubic.com</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> Le comparatif annuel de Clubic (mars 2026) teste 10 antivirus en conditions réelles. Bitdefender Total Security atteint 100 % de détection selon les tests AV-TEST de décembre 2025, pour moins de 50 €/an sur 5 appareils. En face, les solutions gratuites sont pointées du doigt pour avoir un modèle économique reposant sur la revente de données de navigation à des annonceurs.</p>
+      <p><strong>Analyse en profondeur :</strong> L'article met en évidence que la différence de qualité entre gratuit et payant est "abyssale". Le modèle économique est déterminant : un antivirus entièrement payant n'a aucun intérêt à monétiser vos données, alors qu'un gratuit doit compenser ses coûts d'infrastructure d'une façon ou d'une autre. Le prix devient alors un indicateur indirect de respect de la vie privée.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Approche concrète du coût total de possession (TCO) d'une solution de sécurité. En SLAM ou SISR, il faut savoir justifier un budget sécurité : cet article démontre qu'un antivirus payant à 4 €/mois est souvent moins coûteux à long terme qu'une solution "gratuite" dont le vrai coût est la fuite des données de l'organisation.</p>
+    </div>
+  </div>
+</div>
+<!-- ARTICLE 07 -->
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">07</div>
+    <div class="article-text">
+      <strong>Bilan sanctions CNIL 2025 : 486 millions d'euros d'amendes RGPD, un record historique</strong>
+      <span>CNIL · Fév. 2026 — <a href="https://www.cnil.fr/fr/bilan-sanctions-2025" target="_blank" onclick="event.stopPropagation()">cnil.fr</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> Le bilan officiel 2025 de la CNIL fait état de 486 839 500 € d'amendes cumulées — contre 55 millions en 2024 et 89 millions en 2023. Sur 259 décisions rendues, on compte 83 sanctions et 143 mises en demeure. Les trois domaines les plus sanctionnés sont les cookies sans consentement, la vidéosurveillance abusive des salariés, et l'insuffisance des mesures de sécurité des données personnelles.</p>
+      <p><strong>Analyse en profondeur :</strong> Ce bilan marque un tournant : la CNIL applique désormais pleinement le principe d'accountability du RGPD. La conformité ne se limite plus à l'existence de chartes ou de registres — elle exige des preuves concrètes (logs, audits, attestations techniques). Le message est direct : tout éditeur de logiciel qui collecte des données de navigation sans consentement explicite est exposé à des sanctions du même ordre.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Document de référence pour comprendre les obligations légales pesant sur les développeurs et administrateurs. En option SLAM, la mise en place d'un registre des traitements et d'une politique de cookies conforme est une compétence attendue. Ce bilan montre les conséquences concrètes d'une non-conformité, y compris pour les PME visées par les procédures simplifiées.</p>
+    </div>
+  </div>
+</div>
+
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">08</div>
+    <div class="article-text">
+      <strong>Télémétrie : Quand l'antivirus envoie vos fichiers personnels au Cloud</strong>
+      <span>Malekal.com — <a href="https://www.malekal.com/donnees-recuperees-antivirus/" target="_blank" onclick="event.stopPropagation()">malekal.com</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> Malekal explique le fonctionnement de la télémétrie cloud. Pour analyser une menace, l'antivirus peut envoyer des fichiers entiers vers ses serveurs. Si un document Word contient une macro suspecte, vos données personnelles ou professionnelles sont exfiltrées pour analyse sans votre avis direct.</p>
+      <p><strong>Analyse en profondeur :</strong> L'article montre la tension entre efficacité (détection proactive) et confidentialité. Le Cloud permet de bloquer les virus inconnus, mais il transforme l'ordinateur en une machine qui "parle" constamment à des serveurs distants, rendant le contrôle des données sortantes quasi impossible pour l'utilisateur lambda.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Indispensable pour comprendre l'architecture des antivirus modernes. Cela permet d'aborder la configuration des pare-feu et des listes d'exclusion pour protéger les données sensibles d'une organisation.</p>
+    </div>
+  </div>
+</div>
+<!-- ARTICLE 09 -->
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">09</div>
+    <div class="article-text">
+      <strong>RGPD 2025 : TikTok (530 M€), Google (325 M€), Shein (150 M€) — 1,15 milliard d'euros d'amendes en Europe</strong>
+      <span>Clubic · Jan. 2026 — <a href="https://www.clubic.com/actualite-596236-rgpd-1-15-milliard-d-euros-d-amendes-en-2025.html" target="_blank" onclick="event.stopPropagation()">clubic.com</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> En 2025, les autorités européennes ont prononcé plus de 330 amendes RGPD pour un total de 1,15 milliard d'euros. TikTok prend la plus lourde sanction (530 M€) pour transferts illicites de données vers la Chine, suivi de Google (325 M€) pour cookies Gmail sans consentement valide, et Shein (150 M€) pour traceurs déposés avant tout accord utilisateur.</p>
+      <p><strong>Analyse en profondeur :</strong> L'article de Clubic soulève une question dérangeante : avec 2,64 € d'amende par utilisateur impacté pour TikTok, ces sanctions sont-elles vraiment dissuasives face à des entreprises qui génèrent des milliards grâce aux données personnelles ? Cela montre que le RGPD, aussi sévère soit-il en apparence, peine encore à créer un effet dissuasif suffisant pour les géants dont le modèle repose entièrement sur la data.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Illustre directement les enjeux de la conformité RGPD dans un contexte professionnel. Pour un développeur ou un administrateur système, connaître les motifs de sanction les plus fréquents (base légale insuffisante, cookies non conformes, mesures de sécurité inadaptées) est indispensable pour concevoir des applications et des infrastructures conformes dès la conception (privacy by design).</p>
+    </div>
+  </div>
+</div>
+<!-- ARTICLE 10 -->
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">10</div>
+    <div class="article-text">
+      <strong>Free (42 M€) et France Travail (5 M€) sanctionnés par la CNIL en janvier 2026 pour violations de données</strong>
+      <span>CNIL · Jan. 2026 — <a href="https://www.cnil.fr/fr/thematique/cnil/sanctions" target="_blank" onclick="event.stopPropagation()">cnil.fr</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> Le 13 janvier 2026, la CNIL sanctionne Free Mobile (27 M€) et Free (15 M€) suite à l'intrusion d'octobre 2024 ayant compromis les données de millions d'abonnés (noms, adresses, IBAN). Le 22 janvier 2026, France Travail est condamné à 5 M€ pour ne pas avoir sécurisé les données de demandeurs d'emploi, malgré une première attaque déjà survenue en 2024.</p>
+      <p><strong>Analyse en profondeur :</strong> Ces deux affaires illustrent que la conformité RGPD ne protège pas mécaniquement contre les incidents : c'est l'absence de mesures techniques concrètes (MFA, cloisonnement des accès, supervision des prestataires) qui est sanctionnée. La CNIL tend désormais à interpréter l'obligation de sécurité de l'article 32 comme une quasi-obligation de résultat, rendant toute négligence technique coûteuse.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Cas pratiques parfaits pour aborder la gestion des incidents de sécurité et les obligations de notification (72h). Ces affaires montrent que la sécurité des SI n'est pas qu'une affaire technique : elle engage la responsabilité juridique et financière de l'organisation. En option SISR, la mise en œuvre du MFA et la supervision des accès partenaires sont des mesures directement issues de ce type de retours d'expérience.</p>
+    </div>
+  </div>
+</div>
+
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">11</div>
+    <div class="article-text">
+      <strong>F-Secure : Séparer la sécurité de la vie privée pour mieux protéger</strong>
+      <span>F-Secure — <a href="https://www.f-secure.com/fr/legal/privacy" target="_blank" onclick="event.stopPropagation()">f-secure.com</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> L'éditeur finlandais explique sa stratégie de protection multicouche. Ils ont fait le choix de ne jamais lier les données de sécurité (fichiers scannés) à l'identité réelle de l'utilisateur, créant un mur étanche entre la protection technique et le profilage.</p>
+      <p><strong>Analyse en profondeur :</strong> Cet article illustre bien le concept de "Privacy by Design". F-Secure montre que la performance perçue ne doit pas dépendre de la connaissance intime de l'utilisateur. Ils utilisent des identifiants temporaires et anonymes pour leurs services cloud, une rareté dans le secteur.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Un cas pratique sur la mise en œuvre technique de l'anonymisation des logs, une compétence cruciale pour la gestion de serveurs sécurisés en entreprise.</p>
+    </div>
+  </div>
+</div>
+
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">12</div>
+    <div class="article-text">
+      <strong>Bitdefender : Pourquoi le modèle payant est le seul garant du respect des données</strong>
+      <span>Clubic — <a href="https://www.clubic.com/article-77079-1-guide-comparatif-meilleur-antivirus.html" target="_blank" onclick="event.stopPropagation()">clubic.com</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> Bitdefender affirme que la sécurité de haut niveau coûte cher en infrastructure et que les éditeurs "gratuits" mentent forcément sur leur financement. En payant sa licence, l'utilisateur s'assure contractuellement que ses données ne sont pas la monnaie d'échange.</p>
+      <p><strong>Analyse en profondeur :</strong> L'article montre le lien entre développement et éthique : pour maintenir un laboratoire de recherche contre les menaces mondiales, il faut des fonds. L'intérêt est de comprendre que le respect des données est une fonctionnalité premium qui nécessite un modèle économique sain et transparent.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Aide à la prise de décision lors de l'établissement de budgets informatiques. Il justifie l'investissement dans des solutions payantes pour éviter des coûts cachés juridiques ou de réputation.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 13 -->
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">13</div>
+    <div class="article-text">
+      <strong>Bilan cyberattaques France 2024-2025 : 44,9 millions de personnes touchées, infostealers et phishing en tête</strong>
+      <span>RM3A Cybersécurité · Jan. 2026 — <a href="https://rm3a.fr/bilan-des-cyberattaques-en-france-2024-2025-rm3a-cybersecurite/" target="_blank" onclick="event.stopPropagation()">rm3a.fr</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> Le bilan de RM3A Cybersécurité recense plus de 50 organisations majeures victimes sur la période 2024-2025 en France, avec un impact cumulatif sur 44,9 millions de personnes (noms, numéros de sécurité sociale, adresses, identifiants exposés). La méthode la plus utilisée reste le phishing (60 % des attaques initiales), renforcé par des deepfakes audio et des emails générés par IA.</p>
+      <p><strong>Analyse en profondeur :</strong> L'article met en évidence que les infostealers — logiciels voleurs d'identifiants stockés dans les navigateurs — sont devenus le vecteur d'entrée principal, car ils contournent les antivirus traditionnels basés sur des signatures. L'absence généralisée de MFA et la compromission de comptes partenaires expliquent la majorité des intrusions, y compris chez des organisations disposant d'antivirus.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Démontre que l'antivirus seul ne suffit pas : il s'inscrit dans une défense en profondeur. En BTS SIO, cela renforce la pertinence des cours sur la gestion des identités (MFA, annuaires LDAP/AD), la segmentation réseau, et la sensibilisation des utilisateurs — car 60 % des brèches impliquent un comportement humain selon le DBIR 2025.</p>
+    </div>
+  </div>
+</div>
+<!-- ARTICLE 14 -->
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">14</div>
+    <div class="article-text">
+      <strong>Les antivirus basés sur l'IA sont-ils une menace pour la vie privée ?</strong>
+      <span>AntivirusEdition.com · Sep. 2025 — <a href="https://www.antivirusedition.com/blog/les-antivirus-bases-sur-lia-sont-ils-une-menace-pour-la-vie-privee-1593.html" target="_blank" onclick="event.stopPropagation()">antivirusedition.com</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> L'article analyse comment les antivirus IA s'appuient sur le cloud pour mutualiser les données de télémétrie de millions d'utilisateurs, entraîner leurs modèles sur de grands volumes, et repérer des tendances mondiales. En contrepartie, les antivirus envoient automatiquement vers des serveurs distants les activités utilisateur, les processus en cours et les exécutables lancés — soulevant des questions sur ce qui est collecté, comment c'est stocké, et à quelles fins.</p>
+      <p><strong>Analyse en profondeur :</strong> L'efficacité d'un antivirus IA repose directement sur la quantité et la qualité des données analysées : plus il collecte, mieux il détecte. Mais cette logique crée une tension fondamentale avec le RGPD, qui impose une minimisation stricte des données collectées. L'article montre que pour les entreprises, certaines données traitées par l'antivirus peuvent être très sensibles (RH, stratégiques, commerciales), rendant indispensable un contrôle granulaire de la télémétrie.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Aborde l'architecture des antivirus modernes de manière concrète : local vs cloud, analyse comportementale, flux de télémétrie. Indispensable pour comprendre la configuration des pare-feu d'entreprise, des listes d'exclusion et des politiques de groupe (GPO) qui permettent de limiter les données sortantes d'un antivirus tout en maintenant sa protection.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 15 -->
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">15</div>
+    <div class="article-text">
+      <strong>Ransomwares 2025 : 6 604 attaques dans le monde (+52 %), chaîne d'approvisionnement +93 %</strong>
+      <span>Cyber-Savoir.fr · Jan. 2026 — <a href="https://comprendre-ingenierie-sociale.fr/attaques-ransomware-et-de-la-chaine-dapprovisionnement-en-2025-analyse-des-records-et-implications-pour-2026/" target="_blank" onclick="event.stopPropagation()">comprendre-ingenierie-sociale.fr</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> Selon les données de Cyble analysées début 2026, 6 604 attaques par ransomware ont été revendiquées en 2025 (+52 % par rapport à 2024), avec un pic de 731 attaques en décembre 2025. En parallèle, les attaques sur la chaîne d'approvisionnement ont bondi de 93 %, passant de 154 à 297 incidents. Les groupes ransomware se sont professionnalisés en entreprises criminelles avec des structures hiérarchiques et des modèles RaaS (Ransomware-as-a-Service).</p>
+      <p><strong>Analyse en profondeur :</strong> L'article montre que les affiliés RaaS s'adaptent instantanément aux démantèlements policiers (la chute de RansomHub a été immédiatement compensée par la montée de Qilin). Face à des ransomwares polymorphes qui changent de signature à chaque infection, les antivirus basés uniquement sur des signatures sont devenus inefficaces, rendant indispensables les solutions EDR à analyse comportementale.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Justifie la migration des entreprises vers les solutions EDR (Endpoint Detection and Response) et XDR. En option SISR, cela concrétise les cours sur la détection d'intrusion : comprendre pourquoi un simple antivirus à signatures ne suffit plus face au ransomware polymorphe est un argument technique fondamental pour tout projet de sécurisation d'infrastructure.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 16 -->
+<div class="veille-article" onclick="this.classList.toggle('open')">
+  <div class="article-header">
+    <div class="article-num">16</div>
+    <div class="article-text">
+      <strong>Panorama de la cybermenace 2025 : 1 366 incidents confirmés en France, fuites de données +51 % selon l'ANSSI</strong>
+      <span>ANSSI · Mars 2026 — <a href="https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2025/" target="_blank" onclick="event.stopPropagation()">cyber.gouv.fr</a></span>
+    </div>
+    <div class="article-chevron">▼</div>
+  </div>
+  <div class="article-expand">
+    <div class="article-expand-inner">
+      <p><strong>Résumé personnel :</strong> Le Panorama de la cybermenace 2025 de l'ANSSI recense 1 366 incidents confirmés (stable par rapport à 2024) et une hausse de 51 % des exfiltrations de données. Les secteurs les plus ciblés sont l'éducation/recherche (34 %), les ministères et collectivités (24 %), la santé (10 %) et les télécommunications (9 %). L'ANSSI observe une convergence inquiétante entre groupes étatiques et cybercriminels : des acteurs d'État (Corée du Nord, Chine) ont recours au ransomware à des fins lucratives.</p>
+      <p><strong>Analyse en profondeur :</strong> L'ANSSI met en garde contre un "brouillard technologique" où les attaquants utilisent des outils légitimes (AnyDesk, services de stockage cloud) pour masquer leurs activités et contourner les antivirus. Cette technique du "living off the land" rend la détection par signature totalement inopérante, et renforce la nécessité d'une analyse comportementale et d'une supervision active des flux réseaux.</p>
+      <p><strong>Intérêt pour le BTS SIO :</strong> Document de référence institutionnel à citer en contexte professionnel. Il justifie les recommandations de l'ANSSI sur la transposition de NIS 2 et du Cyber Resilience Act. En BTS SIO, comprendre le panorama des menaces réelles en France permet de contextualiser les projets de sécurisation : pourquoi le MFA, pourquoi la gestion des vulnérabilités, pourquoi la supervision des accès partenaires sont des priorités absolues.</p>
+    </div>
+  </div>
+</div>
+     <div class="Bilan-veille">
+        <h3>Bilan</h3>
+        <p>
+        Au terme de cette veille, il ressort que la question 'les antivirus respectent-ils la vie
+        privée ?' n'appelle pas de réponse unique. Tout dépend du modèle économique de
+        l'éditeur, de la version choisie (gratuite ou payante), et du cadre réglementaire dans
+        lequel il opère.
+        </p>
+        <br>
+        <p>
+        Les antivirus gratuits, notamment Avast et AVG, ont clairement montré leurs limites
+        en matière de confidentialité, allant jusqu'à revendre les données de navigation de
+        leurs utilisateurs. À l'inverse, des solutions payantes ou open-source offrent de
+        16 meilleures garanties, même si aucun logiciel n'est totalement exempt de collecte de
+        données.
+        </p>
+        <br>
+        <p>
+        Le RGPD constitue un rempart réglementaire important, comme en témoignent les
+        sanctions record de 2025. Mais il ne suffit pas seul : la sensibilisation des
+        utilisateurs, le choix éclairé des outils et une hygiène numérique rigoureuse restent
+        indispensables face à des cybermenaces en constante évolution.
+        </p>
+        <br>
+        <p>
+        En tant que futur professionnel du développement informatique, cette veille m'a
+        appris que la protection des données doit être intégrée dès la conception des
+        applications, et que le choix des outils de sécurité doit toujours
+        s'accompagner d'une réflexion sur leurs implications en termes de vie privée
+      </p>
+     </div>
+</div>
       </div>
     </div>
   </div>
@@ -277,9 +635,9 @@
         <h2>Parlons de votre <span>projet</span></h2>
         <p>Disponible pour un stage, une alternance ou un projet freelance.</p>
         <div class="contact-links">
-          <a href="mailto:matthias.wnek@gmail.com" class="contact-link"><div class="cl-icon">✉️</div><div style="flex:1"><div class="cl-label">Email</div><div class="cl-value">matthias.wnek@gmail.com</div></div><span style="color:var(--muted)">→</span></a>
+          <a href="mailto:matthias.wnek17@gmail.com" class="contact-link"><div class="cl-icon">✉️</div><div style="flex:1"><div class="cl-label">Email</div><div class="cl-value">matthias.wnek17@gmail.com</div></div><span style="color:var(--muted)">→</span></a>
           <a href="https://www.linkedin.com/in/matthias-wnek" target="_blank" class="contact-link"><div class="cl-icon">🔗</div><div style="flex:1"><div class="cl-label">LinkedIn</div><div class="cl-value">linkedin.com/in/matthias-wnek</div></div><span style="color:var(--muted)">→</span></a>
-          <a href="https://github.com/matthiaswnek" target="_blank" class="contact-link"><div class="cl-icon">🐙</div><div style="flex:1"><div class="cl-label">GitHub</div><div class="cl-value">github.com/matthiaswnek</div></div><span style="color:var(--muted)">→</span></a>
+          <a href="https://github.com/matthiaswnek17-cell/" target="_blank" class="contact-link"><div class="cl-icon">🐙</div><div style="flex:1"><div class="cl-label">GitHub</div><div class="cl-value">github.com/matthiaswnek17-cell/</div></div><span style="color:var(--muted)">→</span></a>
         </div>
       </div>
       <div class="contact-form fade-in">
@@ -296,7 +654,7 @@
 
 <footer>
   <div class="footer-logo">matthias.wnek · BTS SIO SLAM · 2026</div>
-  <div style="font-size:12px;color:var(--muted)">Portfolio professionnel – Épreuve E4 · Lycée Lamartine, Mâcon</div>
+  <div style="font-size:12px;color:var(--muted)">Portfolio professionnel – Épreuve e5 · Lycée Lamartine, Mâcon</div>
 </footer>
 
 <!-- ══════════ MODALES ══════════ -->
@@ -311,7 +669,7 @@
       <div class="modal-subtitle">// Matthias Wnek · BTS SIO SLAM · 2026</div>
     </div>
     <div class="modal-body">
-      <div class="cv-placeholder"> 
+      <div class="cv-placeholder">
         <img src="assets/img/cv.PNG" alt="">
       </div>
       <div style="display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;margin-top:.5rem">
@@ -321,123 +679,173 @@
   </div>
 </div>
 
-<!-- STAGE 1 -->
+<!-- ══ STAGE 1 ══ -->
 <div class="modal-backdrop" id="modal-stage1" onclick="closeBack(event,'modal-stage1')">
   <div class="modal">
     <div class="modal-top">
       <button class="modal-close" onclick="closeModal('modal-stage1')">✕</button>
-      <div class="modal-header-icon" style="background:rgba(108,99,255,.12)">🏛️</div>
-      <div class="modal-tag">stage · 1ère année · 5 semaines · janvier 2025</div>
-      <div class="modal-title">Développeur applicatif junior</div>
-      <div class="modal-subtitle">// Mairie de Mâcon – Direction des Services Informatiques</div>
+      <div class="modal-header-icon" style="background:rgba(108,99,255,.12)">⚡</div>
+      <div class="modal-tag">Stage · 1ère année · 6 semaines · 26 mai 2025 à 4 juill. 2025</div>
+      <div class="modal-title">Développeur d'application C#</div>
+      <div class="modal-subtitle">// Schneider Electric France - Secteur SI</div>
     </div>
     <div class="modal-body">
       <div class="modal-grid">
-        <div class="mg-item"><div class="mg-label">Entreprise</div><div class="mg-value">Mairie de Mâcon – DSI</div></div>
-        <div class="mg-item"><div class="mg-label">Durée</div><div class="mg-value">5 semaines · Janv. 2025</div></div>
+        <div class="mg-item"><div class="mg-label">Durée</div><div class="mg-value">6 semaines</div></div>
         <div class="mg-item"><div class="mg-label">Lieu</div><div class="mg-value">Mâcon, Saône-et-Loire</div></div>
-        <div class="mg-item"><div class="mg-label">Secteur</div><div class="mg-value">Collectivité territoriale</div></div>
+        <div class="mg-item"><div class="mg-label">Secteur</div><div class="mg-value">Informatique / SI</div></div>
+        <div class="mg-item"><div class="mg-label">Nom de projet</div><div class="mg-value">BaseDoc</div></div>
       </div>
       <div class="modal-section">
         <div class="ms-title">Contexte & missions</div>
-        <p>J'ai intégré la <strong>Direction des Services Informatiques de la Mairie de Mâcon</strong>, une équipe de 4 techniciens gérant l'ensemble du parc informatique de la collectivité (environ 200 postes). Ma mission principale consistait à <strong>participer à la maintenance et à l'évolution d'une application de gestion administrative</strong> développée en C# sous Visual Studio, ainsi qu'à assurer une partie du support utilisateur.</p>
+        <p>Développement d'une application de <strong>gestion documentaire</strong> en C# .NET pour l'équipe qualité de Schneider Electric. L'objectif était de <strong>répertorier automatiquement l'ensemble des fichiers</strong> contenus dans une arborescence de dossiers, de les stocker en base de données et de les exposer via une interface de consultation et de filtrage.</p>
       </div>
       <div class="modal-section">
         <div class="ms-title">Tâches réalisées</div>
         <ul class="modal-list">
-          <li>Analyse et correction de bugs dans l'application C# de gestion des congés</li>
-          <li>Ajout d'une fonctionnalité de filtrage avancé dans les tableaux de données</li>
-          <li>Gestion et traitement de tickets d'assistance utilisateurs via GLPI</li>
-          <li>Rédaction d'une documentation technique des procédures internes</li>
-          <li>Participation à l'inventaire et à la mise à jour du parc matériel</li>
-          <li>Sauvegarde et restauration de bases de données SQL Server</li>
+          <li>Parcours récursif de l'arborescence de dossiers et extraction des métadonnées de chaque fichier (nom, chemin, format, date de création/modification…)</li>
+          <li>Conception et alimentation d'une base de données Microsoft SQL Server pour stocker l'ensemble des fichiers référencés</li>
+          <li>Affichage des fichiers sous forme de lignes dans un <code>DataGridView</code> avec colonnes configurables (id, nom, format, date, chemin…)</li>
+          <li>Ouverture du fichier ou de son dossier source directement depuis l'explorateur Windows via l'interface</li>
+          <li>Marquage automatique de chaque fichier comme <em>disponible</em> ou <em>indisponible</em> selon la validité de son chemin</li>
+          <li>Bouton d'import/refresh pour resynchroniser la base de données avec l'état réel du dossier source</li>
+          <li>Création d'une table administrateurs (via SESA) pour gérer les droits de mise à jour de l'application</li>
+          <li>Conception des classes C# : <code>Utilisateur</code>, <code>Fichier</code> et une classe dédiée aux requêtes SQL</li>
         </ul>
       </div>
       <div class="modal-section">
-        <div class="ms-title">Technologies utilisées</div>
-        <div class="modal-badges">
-          <span class="modal-badge ac">C#</span><span class="modal-badge ac">Visual Studio</span>
-          <span class="modal-badge a2">SQL Server</span><span class="modal-badge">GLPI</span>
-          <span class="modal-badge">Windows Server</span><span class="modal-badge">Active Directory</span>
+        <div class="ms-title">Captures d'écran</div>
+        <div class="modal-gallery">
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage1/formprincipaladmin.PNG', 'Vue principale en Administrateur')"><img src="assets/img/screens/stage1/formprincipaladmin.PNG" alt="Vue principale ADMIN"><div class="gallery-caption">// Vue principale en ADMIN – liste des fichiers</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage1/formprincpiallist.PNG', 'Vue principale en Utilisateur')"><img src="assets/img/screens/stage1/formprincpiallist.PNG" alt="Vue principale USER"><div class="gallery-caption">// Vue principale en UTILISATEUR – liste des fichiers</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage1/filtre.PNG', 'Filtrage et recherche par critères')"><img src="assets/img/screens/stage1/filtre.PNG" alt="Filtrage"><div class="gallery-caption">// Filtrage et recherche</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage1/bdduser.PNG', 'Table ADM_ADMIN répertoriant tous les administrateurs')"><img src="assets/img/screens/stage1/bdduser.PNG" alt="Connexion admin"><div class="gallery-caption">// Table ADM_ADMIN répertoriant tous les administrateurs</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage1/recurcivité.PNG', 'Import et récurcivité')"><img src="assets/img/screens/stage1/recurcivité.PNG" alt="Import"><div class="gallery-caption">// Import et récurcivité</div></div>
         </div>
       </div>
       <div class="modal-section">
-        <div class="ms-title">Compétences acquises (référentiel BTS SIO)</div>
-        <ul class="modal-list">
-          <li>1.1 – Recenser et identifier les ressources numériques</li>
-          <li>2.3 – Traiter des demandes concernant les applications</li>
-          <li>3.2 – Gérer des incidents et des demandes d'assistance</li>
-          <li>5.1 – Réaliser les tests d'intégration d'un service</li>
-          <li>5.3 – Accompagner les utilisateurs dans la mise en place d'un service</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="ms-title">Bilan</div>
-        <p>Ce premier stage m'a permis de découvrir le contexte d'une DSI en collectivité et de mettre en pratique mes acquis en C#. Travailler sur un code existant et s'adapter aux contraintes d'un environnement de production m'a beaucoup appris sur la rigueur nécessaire en milieu professionnel.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- STAGE 2 -->
-<div class="modal-backdrop" id="modal-stage2" onclick="closeBack(event,'modal-stage2')">
-  <div class="modal">
-    <div class="modal-top">
-      <button class="modal-close" onclick="closeModal('modal-stage2')">✕</button>
-      <div class="modal-header-icon" style="background:rgba(0,212,168,.1)">🌐</div>
-      <div class="modal-tag">stage · 2ème année · 6 semaines · février 2026</div>
-      <div class="modal-title">Développeur web</div>
-      <div class="modal-subtitle">// Agence Web Nexys – Mâcon</div>
-    </div>
-    <div class="modal-body">
-      <div class="modal-grid">
-        <div class="mg-item"><div class="mg-label">Entreprise</div><div class="mg-value">Agence Web Nexys</div></div>
-        <div class="mg-item"><div class="mg-label">Durée</div><div class="mg-value">6 semaines · Fév. 2026</div></div>
-        <div class="mg-item"><div class="mg-label">Lieu</div><div class="mg-value">Mâcon, Saône-et-Loire</div></div>
-        <div class="mg-item"><div class="mg-label">Secteur</div><div class="mg-value">Agence digitale / Web</div></div>
-      </div>
-      <div class="modal-section">
-        <div class="ms-title">Contexte & missions</div>
-        <p>J'ai rejoint l'<strong>Agence Web Nexys</strong>, une agence de 8 personnes spécialisée dans la création de sites web et d'applications métiers pour des PME et associations locales. Mes missions portaient sur le <strong>développement full-stack</strong> : intégration HTML/CSS/JS et développement back-end en PHP avec Laravel.</p>
-      </div>
-      <div class="modal-section">
-        <div class="ms-title">Projets clients réalisés</div>
-        <ul class="modal-list">
-          <li>Refonte du site vitrine d'une association sportive locale (HTML/CSS/JS)</li>
-          <li>Développement d'un module de réservation en ligne pour un cabinet médical (Laravel)</li>
-          <li>Intégration de maquettes Figma en pages HTML/CSS responsive</li>
-          <li>Mise en place d'un système d'authentification JWT pour une application client</li>
-          <li>Optimisation SEO et performances d'un site e-commerce existant</li>
-        </ul>
-      </div>
-      <div class="modal-section">
         <div class="ms-title">Technologies utilisées</div>
-        <div class="modal-badges">
-          <span class="modal-badge ac">PHP / Laravel</span><span class="modal-badge a2">JavaScript</span>
-          <span class="modal-badge a2">HTML / CSS</span><span class="modal-badge">MySQL</span>
-          <span class="modal-badge">Git / GitHub</span><span class="modal-badge">Figma</span>
-          <span class="modal-badge">JWT</span><span class="modal-badge">REST API</span>
+        <div class="tech-logo-grid">
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" fill="#9B4F96"/><text x="12" y="16" text-anchor="middle" font-size="9" font-weight="700" fill="white" font-family="sans-serif">C#</text></svg>C#</div>
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#512BD4"/><text x="12" y="16" text-anchor="middle" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">.NET</text></svg>.NET</div>
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h8v8H3z" fill="#68217A"/><path d="M13 3h8v8h-8z" fill="#B179C8"/><path d="M3 13h8v8H3z" fill="#B179C8"/><path d="M13 13h8v8h-8z" fill="#68217A"/></svg>Visual Studio</div>
+          <div class="tech-logo-item a2"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#CC2927"/><text x="12" y="10" text-anchor="middle" font-size="5" font-weight="700" fill="white" font-family="sans-serif">SQL</text><text x="12" y="17" text-anchor="middle" font-size="5" font-weight="700" fill="white" font-family="sans-serif">SERVER</text></svg>Microsoft SQL Server</div>
         </div>
       </div>
       <div class="modal-section">
         <div class="ms-title">Compétences acquises</div>
         <ul class="modal-list">
-          <li>2.3 – Traiter des demandes concernant les applications</li>
-          <li>4.1 – Analyser les objectifs et les modalités d'un projet</li>
-          <li>4.2 – Planifier les activités</li>
-          <li>5.2 – Déployer un service</li>
-          <li>5.3 – Accompagner les utilisateurs dans la mise en place d'un service</li>
+          <li>4.1 – Analyser les besoins et modéliser une solution applicative</li>
+          <li>4.2 – Concevoir et développer une solution applicative</li>
+          <li>4.3 – Gérer les données et les accès à une base de données</li>
+          <li>5.1 – Réaliser les tests d'intégration d'un service</li>
         </ul>
       </div>
       <div class="modal-section">
         <div class="ms-title">Bilan</div>
-        <p>Ce second stage a confirmé mon souhait de travailler dans le développement web. Travailler en agence m'a appris à gérer plusieurs projets simultanément, à respecter les délais clients et à utiliser Git en équipe de manière professionnelle.</p>
+        <p>Ce stage m'a permis de renforcé mes compétences en C# .NET, notamment en conception de base de données (index, codifications, ...). Il m'a également appris la vie en entreprise côté bureau et le plaisir de pouvoir développé une applications pour un réel besoin.
+          Lors de ce stage j'ai également appris sur la récurcivité et les outils comme system.IO pour accéder à la bibliotèque.
+        </p>
+      </div>
+      <div class="modal-section modal-download-section" style="display:flex;gap:.75rem;flex-wrap:wrap">
+        <button class="modal-download-btn" onclick="downloadReport('stage1.pdf')">📥 Télécharger le compte rendu</button>
+        <button class="modal-download-btn" onclick="downloadReport('attestation_stage1.pdf')" style="background:rgba(0,212,168,.08);border-color:rgba(0,212,168,.3);color:var(--accent2)">🏅 Télécharger l'attestation</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- AP 1 -->
+<!-- LIGHTBOX -->
+<div class="lightbox-backdrop" id="lightbox" onclick="closeLightbox(event)">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+</div>
+
+<!-- ══ STAGE 2 ══ -->
+<div class="modal-backdrop" id="modal-stage2" onclick="closeBack(event,'modal-stage2')">
+  <div class="modal">
+    <div class="modal-top">
+      <button class="modal-close" onclick="closeModal('modal-stage2')">✕</button>
+      <div class="modal-header-icon" style="background:rgba(0,212,168,.1)">⚡</div>
+      <div class="modal-tag">Stage · 2ème année · 5 semaines · 2026</div>
+      <div class="modal-title">Développeur d'application C#</div>
+      <div class="modal-subtitle">// Schneider Electric France - Secteur SI</div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-grid">
+        <div class="mg-item"><div class="mg-label">Durée</div><div class="mg-value">5 semaines</div></div>
+        <div class="mg-item"><div class="mg-label">Lieu</div><div class="mg-value">Mâcon, Saône-et-Loire</div></div>
+        <div class="mg-item"><div class="mg-label">Secteur</div><div class="mg-value">Informatique / SI</div></div>
+        <div class="mg-item"><div class="mg-label">Nom de projet</div><div class="mg-value">CometEtiqPlus</div></div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Contexte & missions</div>
+        <p>Dans le cadre du projet <strong>UNIFY</strong> visant à centraliser les outils de gestion du site, j'ai développé une application de <strong>référencement des étiquettes produits</strong> pour l'usine Schneider Electric de Mâcon. Ces étiquettes, apposées sur du matériel haute tension (cellules Pix H/M, FBX, PremSeT), sont critiques pour la traçabilité et la conformité réglementaire. Les données étaient jusqu'alors dispersées entre SAP et COMET sans vue d'ensemble.</p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Tâches réalisées</div>
+        <ul class="modal-list">
+          <li>Analyse de l'existant et conception du schéma relationnel SQL Server (tables Etiquette, Champ, Administrateur)</li>
+          <li>Développement d'une <strong>architecture N-Tiers</strong> : DLL C# pour la couche métier, WinForms pour la couche présentation</li>
+          <li>Implémentation des classes objets (<code>Etiquette</code>, <code>Champ</code>, <code>Administrateur</code>) et des méthodes CRUD dans la DLL</li>
+          <li>Interface principale avec double vue : <strong>DataGridView</strong> (tabulaire) et <strong>FlowLayoutPanel</strong> dynamique (vue par blocs)</li>
+          <li>Filtrage cumulatif : barre de recherche + CheckBox fonctionnant simultanément</li>
+          <li>Fenêtres dédiées : ajout, consultation détaillée, modification/suppression avec gestion des droits administrateurs</li>
+          <li>Module d'<strong>internationalisation dynamique FR/EN</strong> sur l'ensemble des formulaires</li>
+          <li>Gestion des administrateurs via identifiant SESA (session Windows)</li>
+          <li>Alimentation de la base de données par scripts SQL générés avec l'IA à partir de captures d'écran d'étiquettes existantes</li>
+          <li>Refactorisation complète du code selon les normes de codification industrielles</li>
+          <li>Présentation de l'outil finalisé au service informatique</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Captures d'écran</div>
+        <div class="modal-gallery">
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage2/vudatagrid.PNG', 'Vue principale avec FlowLayout')"><img src="assets/img/screens/stage2/vudatagrid.PNG" alt="Vue principale"><div class="gallery-caption">// Vue principale avec FlowLayout (Mode d'affichage n°1)</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage2/vuflowlayout.PNG', 'Vue principale avec DataGridView')"><img src="assets/img/screens/stage2/vuflowlayout.PNG" alt="Vue principale"><div class="gallery-caption">// Vue principale avec DataGridView (Mode d'affichage n°2)</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage2/langue.PNG', 'Changement de langue (Fr/en)')"><img src="assets/img/screens/stage2/langue.PNG" alt="Filtrage"><div class="gallery-caption">// Changement de langue (Fr/en)</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage2/basededonnée.PNG', 'Diagramme de base de donnée')"><img src="assets/img/screens/stage2/basededonnée.PNG" alt="Connexion admin"><div class="gallery-caption">// Diagramme de base de donnée</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage2/ajouter.PNG', 'Vue ajouter (seulement possible en tant que administrateur)')"><img src="assets/img/screens/stage2/ajouter.PNG" alt="Import"><div class="gallery-caption">// Vue ajouter sur l'étiquette (seulement possible en tant que administrateur)</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage2/modification.PNG', 'Vue modifier (seulement possible en tant que administrateur)')"><img src="assets/img/screens/stage2/modification.PNG" alt="Import"><div class="gallery-caption">// Vue modifier sur l'étiquette (seulement possible en tant que administrateur)</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage2/information.PNG', 'Vue information')"><img src="assets/img/screens/stage2/information.PNG" alt="Import"><div class="gallery-caption">// Vue Information sur l'étiquette</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/stage2/etiquette.jpg', 'Exemple étiquette')"><img src="assets/img/screens/stage2/etiquette.jpg" alt="Import"><div class="gallery-caption">// Exemple d'étiquette</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Technologies utilisées</div>
+        <div class="tech-logo-grid">
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" fill="#9B4F96"/><text x="12" y="16" text-anchor="middle" font-size="9" font-weight="700" fill="white" font-family="sans-serif">C#</text></svg>C#</div>
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#512BD4"/><text x="12" y="16" text-anchor="middle" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">.NET</text></svg>.NET</div>
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h8v8H3z" fill="#68217A"/><path d="M13 3h8v8h-8z" fill="#B179C8"/><path d="M3 13h8v8H3z" fill="#B179C8"/><path d="M13 13h8v8h-8z" fill="#68217A"/></svg>Visual Studio</div>
+          <div class="tech-logo-item a2"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#CC2927"/><text x="12" y="10" text-anchor="middle" font-size="5" font-weight="700" fill="white" font-family="sans-serif">SQL</text><text x="12" y="17" text-anchor="middle" font-size="5" font-weight="700" fill="white" font-family="sans-serif">SERVER</text></svg>Microsoft SQL Server</div>
+        </div>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Compétences acquises (référentiel BTS SIO)</div>
+        <ul class="modal-list">
+          <li>C1 – Gérer le patrimoine informatique : centralisation des métadonnées dispersées entre SAP et COMET</li>
+          <li>C2 – Répondre aux incidents : correction de bugs de filtrage et de jointures SQL</li>
+          <li>C4 – Travailler en mode projet : respect des jalons, pivot architectural (abandon table associative)</li>
+          <li>C5 – Mettre à disposition un service : déploiement via DLL, interface bilingue FR/EN</li>
+          <li>C6 – Développement professionnel : utilisation de l'IA pour automatiser la génération de scripts SQL</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Bilan</div>
+        <p>Ce stage m'a permis de mener un projet applicatif complet dans un contexte industriel plutôt exigeant. J'ai approfondi mes compétences en C# et en architecture logicielle, en faisant des choix techniques concrets (abandon de la table associative, architecture N-Tiers via DLL). Livrer un outil fonctionnel répondant à un vrai besoin du projet UNIFY a été une expérience très enrichissante et confirme mon intérêt pour le développement en général</p>
+      </div>
+      <div class="modal-section modal-download-section" style="display:flex;gap:.75rem;flex-wrap:wrap">
+        <button class="modal-download-btn" onclick="downloadReport('stage2.pdf')">📥 Télécharger le compte rendu</button>
+        <button class="modal-download-btn" onclick="downloadReport('attestation_stage2.pdf')" style="background:rgba(0,212,168,.08);border-color:rgba(0,212,168,.3);color:var(--accent2)">🏅 Télécharger l'attestation</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ AP 1 ══ -->
 <div class="modal-backdrop" id="modal-ap1" onclick="closeBack(event,'modal-ap1')">
   <div class="modal">
     <div class="modal-top">
@@ -445,53 +853,49 @@
       <div class="modal-header-icon" style="background:rgba(24,95,165,.12)">⚽</div>
       <div class="modal-tag">ap · 1ère année · projet 1 · jan–mars 2025</div>
       <div class="modal-title">LFP – Gestion Ligue 1</div>
-      <div class="modal-subtitle">// Ligue de Football Professionnel · Application C#</div>
+      <div class="modal-subtitle">// Ligue de Football Professionnel · C# / MySQL / PHP</div>
     </div>
     <div class="modal-body">
       <div class="modal-grid">
         <div class="mg-item"><div class="mg-label">Client fictif</div><div class="mg-value">LFP</div></div>
         <div class="mg-item"><div class="mg-label">Période</div><div class="mg-value">2 jan. → 13 mars 2025</div></div>
-        <div class="mg-item"><div class="mg-label">Langage</div><div class="mg-value">C# · .NET</div></div>
-        <div class="mg-item"><div class="mg-label">BDD</div><div class="mg-value">MySQL · PhpMyAdmin</div></div>
+        <div class="mg-item"><div class="mg-label">Langage</div><div class="mg-value">C# · Visual Studio</div></div>
+        <div class="mg-item"><div class="mg-label">Base de données</div><div class="mg-value">MySQL (pilote ODBC)</div></div>
       </div>
-
       <div class="modal-section">
-        <div class="ms-title">Contexte</div>
-        <p>La société de services informatiques a été retenue comme prestataire pour développer et maintenir les applications de la <strong>LFP (Ligue de Football Professionnel)</strong>. Le projet porte sur la gestion du calendrier des rencontres et des résultats du championnat de Ligue 1, ainsi que leur diffusion sur internet.</p>
+        <div class="ms-title">Contexte & Objectifs</div>
+        <p>La société de services informatiques a été retenue comme prestataire pour développer et maintenir les applications de la <strong>LFP (Ligue de Football Professionnel)</strong>. Le projet porte sur la gestion du calendrier des rencontres et des résultats du championnat de Ligue 1, ainsi que leur diffusion sur internet. L'architecture repose sur une <strong>base de données MySQL centralisée</strong>, mise à jour par une application locale C# côté administrateur, et consultable par les utilisateurs via un site web PHP.</p>
       </div>
-
       <div class="modal-section">
-        <div class="ms-title">Objectifs</div>
-        <ul class="modal-list">
-          <li>Développer et maintenir les applications de la LFP</li>
-          <li>Gérer le calendrier des rencontres et les résultats du championnat de Ligue 1</li>
-          <li>Participer au développement de l'application sous Visual Studio C#</li>
-          <li>Analyser les spécifications techniques pour concevoir et développer le logiciel</li>
-          <li>Tester et intégrer en continu la solution développée</li>
-          <li>Accompagner l'application d'une documentation écrite et structurée</li>
-        </ul>
+        <div class="ms-title">Architecture logicielle</div>
+        <img src="assets/img/archicture/architectureLFP.png" alt="">
       </div>
-
       <div class="modal-section">
         <div class="ms-title">Fonctionnalités réalisées</div>
-        <p><strong>User story n°1 :</strong> Classement des clubs à l'issue de la dernière journée — affichage selon les points et la différence de buts.</p>
-        <p><strong>User story n°2 :</strong> Visualisation et modification des informations d'un club — consultation et mise à jour des données.</p>
-        <p><strong>User story n°4 :</strong> Ajout d'une rencontre dans le calendrier — saisie d'un nouveau match avec date, heure et sélection des deux clubs disponibles.</p>
+        <p><strong>User story n°1 :</strong> Classement des clubs à l'issue de la dernière journée</p>
+        <p><strong>User story n°3 :</strong> Visualisation et mise à jour du calendrier des rencontres</p>
+        <p><strong>User story n°5 :</strong> Saisie des résultats d'une journée</p>
       </div>
-
       <div class="modal-section">
-        <div class="ms-title">Technologies & outils</div>
-        <div class="modal-badges">
-          <span class="modal-badge ac">C#</span>
-          <span class="modal-badge ac">Visual Studio</span>
-          <span class="modal-badge a2">WampServer</span>
-          <span class="modal-badge a2">MySQL</span>
-          <span class="modal-badge">.NET</span>
-          <span class="modal-badge">PhpMyAdmin</span>
-          <span class="modal-badge">Git</span>
+        <div class="ms-title">Captures d'écran</div>
+        <div class="modal-gallery">
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap11/bdd.PNG', 'Diagramme de base de donnée')"><img src="assets/img/screens/ap11/bdd.PNG" alt="Diagramme de base de donnée"><div class="gallery-caption">// Diagramme de base de donnée</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap11/classement.PNG', 'Classement des équipes avec qualification et relégation')"><img src="assets/img/screens/ap11/classement.PNG" alt="Vue principale USER"><div class="gallery-caption">// Classement des équipes avec qualification et relégation</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap11/calendrire.PNG', 'Calendrier modifiable')"><img src="assets/img/screens/ap11/calendrire.PNG" alt="Filtrage"><div class="gallery-caption">// Calendrier modifiable</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap11/resultats.PNG', 'Resultats des rencontres modifiables')"><img src="assets/img/screens/ap11/resultats.PNG" alt="Connexion admin"><div class="gallery-caption">// Resultats des rencontres modifiables</div></div>
         </div>
       </div>
-
+      <div class="modal-section">
+        <div class="ms-title">Technologies utilisées</div>
+        <div class="tech-logo-grid">
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" fill="#9B4F96"/><text x="12" y="16" text-anchor="middle" font-size="9" font-weight="700" fill="white" font-family="sans-serif">C#</text></svg>C#</div>
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#512BD4"/><text x="12" y="16" text-anchor="middle" font-size="7.5" font-weight="700" fill="white" font-family="sans-serif">.NET</text></svg>.NET</div>
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h8v8H3z" fill="#68217A"/><path d="M13 3h8v8h-8z" fill="#B179C8"/><path d="M3 13h8v8H3z" fill="#B179C8"/><path d="M13 13h8v8h-8z" fill="#68217A"/></svg>Visual Studio</div>
+          <div class="tech-logo-item a2"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#f5a623"/><text x="12" y="16.5" text-anchor="middle" font-size="8" font-weight="700" fill="white" font-family="sans-serif">WAMP</text></svg>WampServer</div>
+          <div class="tech-logo-item a2"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C7 3 3 5.5 3 8.5v7C3 18.5 7 21 12 21s9-2.5 9-5.5v-7C21 5.5 17 3 12 3z" fill="#00758F"/><text x="12" y="10.5" text-anchor="middle" font-size="5.5" font-weight="700" fill="white" font-family="sans-serif">MySQL</text></svg>MySQL</div>
+          <div class="tech-logo-item"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#F89820"/><text x="12" y="16" text-anchor="middle" font-size="5.5" font-weight="700" fill="white" font-family="sans-serif">phpMyAdmin</text></svg>PhpMyAdmin</div>
+        </div>
+      </div>
       <div class="modal-section">
         <div class="ms-title">Compétences BTS SIO acquises</div>
         <ul class="modal-list">
@@ -505,15 +909,14 @@
           <li>5.3 – Accompagner les utilisateurs dans la mise en place d'un service</li>
         </ul>
       </div>
-
-      <div class="modal-section">
-        <a href="#" class="modal-download-btn">Télécharger le compte rendu</a>
+      <div class="modal-section modal-download-section">
+        <button class="modal-download-btn" onclick="downloadReport('LFP1.pdf')">📥 Télécharger le compte rendu</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- AP 2 -->
+<!-- ══ AP 2 ══ -->
 <div class="modal-backdrop" id="modal-ap2" onclick="closeBack(event,'modal-ap2')">
   <div class="modal">
     <div class="modal-top">
@@ -521,53 +924,53 @@
       <div class="modal-header-icon" style="background:rgba(108,99,255,.12)">🌐</div>
       <div class="modal-tag">ap · 1ère année · projet 2 · mars–mai 2025</div>
       <div class="modal-title">LFP – Site Internet Ligue 1</div>
-      <div class="modal-subtitle">// Ligue de Football Professionnel · Application web PHP</div>
+      <div class="modal-subtitle">// Site internet · HTML / CSS / PHP / MySQL</div>
     </div>
     <div class="modal-body">
       <div class="modal-grid">
         <div class="mg-item"><div class="mg-label">Client fictif</div><div class="mg-value">LFP</div></div>
         <div class="mg-item"><div class="mg-label">Période</div><div class="mg-value">20 mars → 15 mai 2025</div></div>
-        <div class="mg-item"><div class="mg-label">Langage</div><div class="mg-value">PHP · JS · HTML · CSS</div></div>
-        <div class="mg-item"><div class="mg-label">BDD</div><div class="mg-value">MySQL · PhpMyAdmin</div></div>
+        <div class="mg-item"><div class="mg-label">Front-end</div><div class="mg-value">HTML · CSS · JavaScript</div></div>
+        <div class="mg-item"><div class="mg-label">Back-end</div><div class="mg-value">PHP · PDO · MySQL</div></div>
+        <div class="mg-item"><div class="mg-label">Serveur</div><div class="mg-value">MySQL</div></div>
       </div>
-
       <div class="modal-section">
-        <div class="ms-title">Contexte</div>
-        <p>La <strong>LFP (Ligue de Football Professionnel)</strong> souhaitait développer son site internet afin de permettre aux internautes de visualiser tous les clubs, les rencontres et les scores, et d'inscrire leurs commentaires. Ce site assure la diffusion en ligne des informations du championnat de Ligue 1.</p>
+        <div class="ms-title">Contexte & Objectifs</div>
+        <p>La <strong>LFP (Ligue de Football Professionnel)</strong> souhaitait développer son site internet afin de permettre aux internautes de visualiser tous les clubs, les rencontres et les scores, et d'inscrire leurs commentaires. Cette <strong>phase 2</strong> complète l'application C# de la phase 1 : le site web PHP se connecte à la même base de données MySQL centralisée, mise à jour par l'administrateur via l'application Visual Studio.</p>
       </div>
-
       <div class="modal-section">
-        <div class="ms-title">Objectifs</div>
-        <ul class="modal-list">
-          <li>Afficher les informations sur les clubs</li>
-          <li>Afficher le calendrier des rencontres et les scores</li>
-          <li>Permettre l'ajout de commentaires par les internautes</li>
-          <li>Diffuser en ligne les informations du championnat de Ligue 1</li>
-          <li>Tester, intégrer en continu et documenter la solution</li>
-        </ul>
+        <div class="ms-title">Architecture du projet</div>
+        <img src="assets/img/archicture/architectureLFP.png" alt="">
       </div>
-
       <div class="modal-section">
         <div class="ms-title">Fonctionnalités réalisées</div>
-        <p><strong>User story n°2 :</strong> Affichage des informations d'un club — consultation de la fiche détaillée de chaque club.</p>
-        <p><strong>User story n°4 :</strong> Création d'un compte — inscription des internautes avec formulaire dédié.</p>
-        <p><strong>User story n°5 :</strong> Authentification — connexion sécurisée des utilisateurs inscrits.</p>
+        <p><strong>User story n°1 :</strong> Classement des clubs à l'issue de la dernière journée</p>
+        <p><strong>User story n°4 :</strong> Création d'un compte.</p>
+        <p><strong>User story n°5 :</strong> Authentification.</p>
       </div>
-
       <div class="modal-section">
-        <div class="ms-title">Technologies & outils</div>
-        <div class="modal-badges">
-          <span class="modal-badge ac">PHP</span>
-          <span class="modal-badge ac">HTML</span>
-          <span class="modal-badge ac">CSS</span>
-          <span class="modal-badge ac">JavaScript</span>
-          <span class="modal-badge a2">WampServer</span>
-          <span class="modal-badge a2">MySQL</span>
-          <span class="modal-badge">PhpMyAdmin</span>
-          <span class="modal-badge">Sublime Text</span>
+        <div class="ms-title">Captures d'écran</div>
+        <div class="modal-gallery">
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap12/bdd.png', 'Diagramme de base de donnée')"><img src="assets/img/screens/ap12/bdd.png" alt="Diagramme de base de donnée"><div class="gallery-caption">// Diagramme de base de donnée</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap12/menu.png', 'Menu principal / Accueil')"><img src="assets/img/screens/ap12/menu.png" alt="Menu principal / Accueil"><div class="gallery-caption">// Menu principal / Accueil</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap12/infossurclub.png', 'Information sur les clubs')"><img src="assets/img/screens/ap12/infossurclub.png" alt="Information sur les clubs"><div class="gallery-caption">// Information sur les clubs</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap12/classement.png', 'Classement de la Ligue 1')"><img src="assets/img/screens/ap12/classement.png" alt="Classement de la Ligue 1"><div class="gallery-caption">// Classement de la Ligue 1</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap12/inscription.png', 'Page inscription')"><img src="assets/img/screens/ap12/inscription.png" alt="Page inscription"><div class="gallery-caption">// Page inscription</div></div>
         </div>
       </div>
-
+      <div class="modal-section">
+        <div class="ms-title">Technologies & outils</div>
+        <div class="tech-logo-grid">
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#777BB4"/><text x="12" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="white" font-family="sans-serif">PHP</text></svg>PHP</div>
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3l1.5 16.5L12 21l7.5-1.5L21 3H3z" fill="#E34F26"/><path d="M12 4.5H5.25l1.125 12.375L12 18.75l5.625-1.875 1.125-12.375H12z" fill="#EF652A"/><text x="12" y="14" text-anchor="middle" font-size="7" font-weight="700" fill="white" font-family="sans-serif">HTML</text></svg>HTML</div>
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3l1.5 16.5L12 21l7.5-1.5L21 3H3z" fill="#1572B6"/><path d="M12 4.5v14.25l5.625-1.875 1.125-12.375H12z" fill="#33A9DC"/><text x="12" y="14" text-anchor="middle" font-size="7" font-weight="700" fill="white" font-family="sans-serif">CSS</text></svg>CSS</div>
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#F7DF1E"/><text x="12" y="16" text-anchor="middle" font-size="7.5" font-weight="700" fill="#333" font-family="sans-serif">JS</text></svg>JavaScript</div>
+          <div class="tech-logo-item a2"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#f5a623"/><text x="12" y="16.5" text-anchor="middle" font-size="8" font-weight="700" fill="white" font-family="sans-serif">WAMP</text></svg>WampServer</div>
+          <div class="tech-logo-item a2"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C7 3 3 5.5 3 8.5v7C3 18.5 7 21 12 21s9-2.5 9-5.5v-7C21 5.5 17 3 12 3z" fill="#00758F"/><text x="12" y="10.5" text-anchor="middle" font-size="5.5" font-weight="700" fill="white" font-family="sans-serif">MySQL</text></svg>MySQL</div>
+          <div class="tech-logo-item"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#F89820"/><text x="12" y="16" text-anchor="middle" font-size="5.5" font-weight="700" fill="white" font-family="sans-serif">phpMyAdmin</text></svg>PhpMyAdmin</div>
+          <div class="tech-logo-item"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#007ACC"/><path d="M5 16l6-6-6-6M11 18h8" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>VS Code</div>
+        </div>
+      </div>
       <div class="modal-section">
         <div class="ms-title">Compétences BTS SIO acquises</div>
         <ul class="modal-list">
@@ -579,118 +982,163 @@
           <li>5.2 – Déployer un service</li>
         </ul>
       </div>
+      <div class="modal-section modal-download-section">
+        <button class="modal-download-btn" onclick="downloadReport('Projet App ADA.pdf')">📥 Télécharger le compte rendu</button>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- AP 3 -->
+<!-- ══ AP 3 ══ -->
 <div class="modal-backdrop" id="modal-ap3" onclick="closeBack(event,'modal-ap3')">
   <div class="modal">
     <div class="modal-top">
       <button class="modal-close" onclick="closeModal('modal-ap3')">✕</button>
-      <div class="modal-header-icon" style="background:rgba(251,191,36,.1)">📋</div>
+      <div class="modal-header-icon" style="background:rgba(251,191,36,.1)">🚗</div>
       <div class="modal-tag">ap · 2ème année · projet 1 · sept–nov 2025</div>
-      <div class="modal-title">Système de Ticketing</div>
-      <div class="modal-subtitle">// Service informatique interne · Laravel / PHP</div>
+      <div class="modal-title">ADA Location de Véhicules</div>
+      <div class="modal-subtitle">// Backoffice agences · C# / Entity Framework / SQL Server</div>
     </div>
     <div class="modal-body">
       <div class="modal-grid">
-        <div class="mg-item"><div class="mg-label">Client fictif</div><div class="mg-value">Entreprise multi-sites</div></div>
+        <div class="mg-item"><div class="mg-label">Client</div><div class="mg-value">ADA Location</div></div>
         <div class="mg-item"><div class="mg-label">Période</div><div class="mg-value">Sept. → Nov. 2025</div></div>
-        <div class="mg-item"><div class="mg-label">Framework</div><div class="mg-value">Laravel 11</div></div>
-        <div class="mg-item"><div class="mg-label">BDD</div><div class="mg-value">MySQL</div></div>
+        <div class="mg-item"><div class="mg-label">Langage</div><div class="mg-value">C# · Visual Studio</div></div>
+        <div class="mg-item"><div class="mg-label">Framework</div><div class="mg-value">Entity Framework (.NET)</div></div>
+        <div class="mg-item"><div class="mg-label">Base de données</div><div class="mg-value">Microsoft SQL Server</div></div>
+        <div class="mg-item"><div class="mg-label">Architecture</div><div class="mg-value">MVC · POO</div></div>
       </div>
       <div class="modal-section">
-        <div class="ms-title">Contexte</div>
-        <p>Une entreprise multi-sites souhaitait remplacer sa gestion des incidents par email par une <strong>application web de ticketing centralisée</strong>. L'objectif était de permettre aux employés de soumettre des tickets d'incident et aux techniciens de les traiter avec un suivi complet.</p>
+        <div class="ms-title">Contexte & Objectifs</div>
+        <p>ADA Location, acteur majeur de la location de véhicules en France, souhaitait moderniser les outils numériques de son réseau de franchisés. Cette <strong>phase 1</strong> consistait à développer une <strong>application backoffice</strong> déployée dans chaque agence, permettant au responsable d'administrer les données de son agence via une base de données SQL Server centralisée commune à l'ensemble du réseau.</p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Architecture du projet</div>
+        <img src="assets/img/archicture/architectureADA.png" alt="">
       </div>
       <div class="modal-section">
         <div class="ms-title">Fonctionnalités réalisées</div>
-        <ul class="modal-list">
-          <li>Création de tickets avec niveau de priorité (Faible / Moyen / Urgent)</li>
-          <li>Attribution automatique et manuelle aux techniciens disponibles</li>
-          <li>Suivi du statut : Ouvert → En cours → Résolu → Fermé</li>
-          <li>Tableau de bord technicien avec indicateurs de charge de travail</li>
-          <li>Notifications par email à chaque changement de statut</li>
-          <li>Historique complet des actions par ticket avec horodatage</li>
-          <li>Gestion des rôles : Administrateur / Technicien / Utilisateur</li>
-        </ul>
+        <p><strong>User story n°1 :</strong> En tant que responsable de l'agence de Mâcon, je veux saisir l'identifiant et le mot de passe de l'agence sur le formulaire de connexion pour pouvoir accéder à l'écran d'accueil.</p>
+        <p><strong>User story n°3 :</strong> En tant que responsable de l'agence de Mâcon, je veux gérer mon parc de véhicules c'est-à-dire visualiser tous les véhicules appartenant à mon agence. Je veux pouvoir filtrer l'affichage par catégorie. Lorsque je clique sur un véhicule, je veux pouvoir en visualiser la liste des attributs de sa catégorie.</p>
+        <p><strong>User story n°4 :</strong> En tant que responsable de l'agence de Mâcon, je veux pouvoir ajouter un nouveau véhicule ou supprimer un véhicule.</p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Captures d'écran</div>
+        <div class="modal-gallery">
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap21/bdd.PNG', 'Diagramme de base de donnée')"><img src="assets/img/screens/ap21/bdd.PNG" alt="Diagramme de base de donnée"><div class="gallery-caption">// Diagramme de base de donnée</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap21/client-p.PNG', 'Créer et modifier une fiche client')"><img src="assets/img/screens/ap21/client-p.PNG" alt="Vue principale USER"><div class="gallery-caption">// Créer et modifier une fiche client</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap21/connexion-p.PNG', 'Page de connexion')"><img src="assets/img/screens/ap21/connexion-p.PNG" alt="Filtrage"><div class="gallery-caption">// Page de connexion</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap21/espaceagence-p.PNG', 'Espace agence modifiable')"><img src="assets/img/screens/ap21/espaceagence-p.PNG" alt="Connexion admin"><div class="gallery-caption">// Espace agence modifiable</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap21/location-p.PNG', 'Afficher les locations')"><img src="assets/img/screens/ap21/location-p.PNG" alt="Filtrage"><div class="gallery-caption">// Afficher les locations</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap21/vehicule-p.PNG', 'Lister, filtrer et ajouter un vehicule')"><img src="assets/img/screens/ap21/vehicule-p.PNG" alt="Connexion admin"><div class="gallery-caption">// Lister, filtrer et ajouter un vehicule</div></div>
+        </div>
       </div>
       <div class="modal-section">
         <div class="ms-title">Technologies</div>
-        <div class="modal-badges">
-          <span class="modal-badge ac">Laravel 11</span><span class="modal-badge ac">PHP 8.2</span>
-          <span class="modal-badge a2">Bootstrap 5</span><span class="modal-badge">MySQL</span>
-          <span class="modal-badge">Git / GitHub</span><span class="modal-badge">Blade</span>
+        <div class="tech-logo-grid">
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" fill="#9B4F96"/><text x="12" y="16" text-anchor="middle" font-size="9" font-weight="700" fill="white" font-family="sans-serif">C#</text></svg>C#</div>
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#512BD4"/><text x="12" y="10.5" text-anchor="middle" font-size="5" font-weight="700" fill="white" font-family="sans-serif">Entity</text><text x="12" y="17.5" text-anchor="middle" font-size="5" font-weight="700" fill="white" font-family="sans-serif">Framework</text></svg>Entity Framework</div>
+          <div class="tech-logo-item a2"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h8v8H3z" fill="#68217A"/><path d="M13 3h8v8h-8z" fill="#B179C8"/><path d="M3 13h8v8H3z" fill="#B179C8"/><path d="M13 13h8v8h-8z" fill="#68217A"/></svg>Visual Studio</div>
+          <div class="tech-logo-item"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#CC2927"/><text x="12" y="10" text-anchor="middle" font-size="5" font-weight="700" fill="white" font-family="sans-serif">SQL</text><text x="12" y="17" text-anchor="middle" font-size="5" font-weight="700" fill="white" font-family="sans-serif">SERVER</text></svg>SQL Server</div>
+          <div class="tech-logo-item"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#CC2927"/><text x="12" y="10" text-anchor="middle" font-size="5" font-weight="700" fill="white" font-family="sans-serif">SSMS</text><text x="12" y="17" text-anchor="middle" font-size="4.5" font-weight="700" fill="white" font-family="sans-serif">Mgmt Studio</text></svg>SSMS</div>
         </div>
       </div>
       <div class="modal-section">
         <div class="ms-title">Compétences BTS SIO acquises</div>
         <ul class="modal-list">
+          <li>1.1 – Recenser et identifier les ressources numériques</li>
+          <li>1.3 – Mettre en place et vérifier les niveaux d'habilitation associés à un service</li>
           <li>2.3 – Traiter des demandes concernant les applications</li>
-          <li>3.2 – Gérer des incidents et des demandes d'assistance</li>
-          <li>4.1 – Analyser les objectifs et les modalités d'un projet</li>
-          <li>4.2 – Planifier les activités</li>
+          <li>4.1 – Analyser les objectifs et les modalités d'organisation d'un projet</li>
           <li>5.1 – Réaliser les tests d'intégration et d'acceptation d'un service</li>
-          <li>5.2 – Déployer un service</li>
         </ul>
+      </div>
+      <div class="modal-section modal-download-section">
+        <button class="modal-download-btn" onclick="downloadReport('Projet App ADA.pdf')">📥 Télécharger le compte rendu</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- AP 4 -->
+<!-- ══ AP 4 ══ -->
 <div class="modal-backdrop" id="modal-ap4" onclick="closeBack(event,'modal-ap4')">
   <div class="modal">
     <div class="modal-top">
       <button class="modal-close" onclick="closeModal('modal-ap4')">✕</button>
-      <div class="modal-header-icon" style="background:rgba(255,107,107,.1)">📊</div>
-      <div class="modal-tag">ap · 2ème année · projet 2 · janv–mars 2026</div>
-      <div class="modal-title">Dashboard RH – Suivi employés</div>
-      <div class="modal-subtitle">// PME · Vue.js 3 + Laravel REST API</div>
+      <div class="modal-header-icon" style="background:rgba(255,107,107,.1)">🚗</div>
+      <div class="modal-tag">ap · 2ème année · projet 2 · nov–déc 2025</div>
+      <div class="modal-title">ADA Location de véhicules</div>
+      <div class="modal-subtitle">// Site internet · PHP / Laravel · HTML · MySQL</div>
     </div>
     <div class="modal-body">
       <div class="modal-grid">
-        <div class="mg-item"><div class="mg-label">Client fictif</div><div class="mg-value">PME – Service RH</div></div>
-        <div class="mg-item"><div class="mg-label">Période</div><div class="mg-value">Janv. → Mars 2026</div></div>
-        <div class="mg-item"><div class="mg-label">Front-end</div><div class="mg-value">Vue.js 3 (Composition API)</div></div>
-        <div class="mg-item"><div class="mg-label">Back-end</div><div class="mg-value">Laravel · REST API</div></div>
+        <div class="mg-item"><div class="mg-label">Client</div><div class="mg-value">ADA Location</div></div>
+        <div class="mg-item"><div class="mg-label">Période</div><div class="mg-value">Nov. → Déc. 2025</div></div>
+        <div class="mg-item"><div class="mg-label">Front-end</div><div class="mg-value">HTML · CSS · Bootstrap · JavaScript</div></div>
+        <div class="mg-item"><div class="mg-label">Back-end</div><div class="mg-value">PHP · Laravel · Eloquent ORM</div></div>
+        <div class="mg-item"><div class="mg-label">Base de données</div><div class="mg-value">MySQL (migré depuis SQL Server)</div></div>
+        <div class="mg-item"><div class="mg-label">Architecture</div><div class="mg-value">MVC (Modèle-Vue-Contrôleur)</div></div>
       </div>
       <div class="modal-section">
         <div class="ms-title">Contexte</div>
-        <p>Une PME de 80 salariés cherchait à <strong>centraliser la gestion RH</strong> dans un tableau de bord intuitif. Le DRH souhaitait suivre en temps réel les congés, absences, formations et évaluer les performances par équipe, sans passer par des tableurs Excel.</p>
+        <p>ADA Location évolue sur un marché très concurrentiel de la location de véhicules en France, face à des acteurs comme Hertz, Europcar ou Avis. Pour conserver sa place de <strong>leader de la location de proximité</strong>, l'entreprise a lancé un projet de refonte de son site internet. Cette <strong>phase 2</strong> concerne le développement du site client en Laravel, accédant à une base de données MySQL centralisée commune à toutes les agences.</p>
       </div>
       <div class="modal-section">
-        <div class="ms-title">Fonctionnalités réalisées</div>
+        <div class="ms-title">Objectifs</div>
         <ul class="modal-list">
-          <li>Tableau de bord avec KPIs : taux d'absentéisme, congés restants, formations</li>
-          <li>Gestion des congés : demande, validation hiérarchique, calendrier visuel</li>
-          <li>Visualisation avec Chart.js (camemberts, barres, courbes d'évolution)</li>
-          <li>Fiches employés avec historique complet et suivi d'objectifs</li>
-          <li>Export des rapports mensuels au format PDF</li>
-          <li>API REST sécurisée avec tokens Laravel Sanctum</li>
-          <li>Interface SPA fluide (Vue.js 3 + Pinia + Vite)</li>
+          <li>Attirer et conquérir de nouveaux clients</li>
+          <li>Moderniser l'image de l'enseigne</li>
+          <li>Proposer une ergonomie adaptée aux attentes des utilisateurs</li>
+          <li>Mettre en valeur les véhicules grâce à de nouvelles photos</li>
+          <li>Simplifier le parcours client pour la recherche et la réservation</li>
+          <li>Améliorer l'expérience utilisateur globale</li>
         </ul>
       </div>
       <div class="modal-section">
+        <div class="ms-title">Architecture du projet</div>
+        <img src="assets/img/archicture/architectureADA.png" alt="">
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Fonctionnalités réalisées</div>
+        <p><strong>User story n°2 :</strong> En tant que visiteur du site, je veux visualiser toute l'offre de location de ADA, c'est-à-dire que je veux sélectionner dans une liste déroulante (ou icônes cliquables) un genre, puis dans une deuxième liste déroulante des catégories correspondantes (ou icônes cliquables), je veux sélectionner une catégorie pour en visualiser les informations complètes : libelle, …, photo, et les attributs (logo, libellé, et valeur) de la catégorie.</p>
+        <p><strong>User story n°3 :</strong> En tant que visiteur du site, je veux me créer un compte client.</p>
+        <p><strong>User story n°4 :</strong> En tant que visiteur du site, je veux me connecter avec mon compte client et me déconnecter. Mon menu s'adapte en fonction de ma situation (connecté ou non).</p>
+      </div>
+      <div class="modal-section">
+        <div class="ms-title">Captures d'écran</div>
+        <div class="modal-gallery">
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap22/bdd.PNG', 'Diagramme de base de donnée')"><img src="assets/img/screens/ap22/bdd.PNG" alt="Diagramme de base de donnée"><div class="gallery-caption">// Diagramme de base de donnée</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap22/location.PNG', 'Affichage des locations disponibles pour réserver')"><img src="assets/img/screens/ap22/location.PNG" alt="Vue principale USER"><div class="gallery-caption">// Affichage des locations disponibles pour réserver</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap22/login.PNG', 'Page authentification et inscription')"><img src="assets/img/screens/ap22/login.PNG" alt="Filtrage"><div class="gallery-caption">// Page d'authentification et inscription</div></div>
+          <div class="gallery-item" onclick="openLightbox('assets/img/screens/ap22/mesloc.PNG', 'Afficher les locations de l\'agence')"><img src="assets/img/screens/ap22/mesloc.PNG" alt="Connexion admin"><div class="gallery-caption">// Afficher les locations de l'agence</div></div>
+        </div>
+      </div>
+      <div class="modal-section">
         <div class="ms-title">Technologies</div>
-        <div class="modal-badges">
-          <span class="modal-badge ac">Vue.js 3</span><span class="modal-badge ac">Laravel Sanctum</span>
-          <span class="modal-badge a2">Chart.js</span><span class="modal-badge a2">REST API</span>
-          <span class="modal-badge">MySQL</span><span class="modal-badge">Pinia</span>
-          <span class="modal-badge">Vite</span><span class="modal-badge">Git</span>
+        <div class="tech-logo-grid">
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3l1.5 16.5L12 21l7.5-1.5L21 3H3z" fill="#E34F26"/><path d="M12 4.5H5.25l1.125 12.375L12 18.75l5.625-1.875 1.125-12.375H12z" fill="#EF652A"/><text x="12" y="14" text-anchor="middle" font-size="7" font-weight="700" fill="white" font-family="sans-serif">HTML</text></svg>HTML</div>
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3l1.5 16.5L12 21l7.5-1.5L21 3H3z" fill="#1572B6"/><path d="M12 4.5v14.25l5.625-1.875 1.125-12.375H12z" fill="#33A9DC"/><text x="12" y="14" text-anchor="middle" font-size="7" font-weight="700" fill="white" font-family="sans-serif">CSS</text></svg>CSS</div>
+          <div class="tech-logo-item ac"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#F7DF1E"/><text x="12" y="16" text-anchor="middle" font-size="7.5" font-weight="700" fill="#333" font-family="sans-serif">JS</text></svg>JavaScript</div>
+          <div class="tech-logo-item a2"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#FF2D20"/><path d="M6 14c0-1.5 2-3 2-4.5S6.5 7 6.5 7s1.5 1 1.5 2.5c0 1-1 2-1 3.5 0 2 2 3 2 3s-3-1-3-2zM10 17c0-2 3-3.5 3-6 0-1.5-1-2.5-1-2.5s3 1 3 3.5c0 2-3 3.5-3 5.5 0 1 .5 2 .5 2S10 19 10 17z" fill="white" opacity=".8"/></svg>Laravel</div>
+          <div class="tech-logo-item"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#CC2927"/><text x="12" y="10" text-anchor="middle" font-size="5" font-weight="700" fill="white" font-family="sans-serif">SQL</text><text x="12" y="17" text-anchor="middle" font-size="5" font-weight="700" fill="white" font-family="sans-serif">SERVER</text></svg>SQL Server</div>
+          <div class="tech-logo-item"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#CC2927"/><text x="12" y="10" text-anchor="middle" font-size="5" font-weight="700" fill="white" font-family="sans-serif">SSMS</text><text x="12" y="17" text-anchor="middle" font-size="4.5" font-weight="700" fill="white" font-family="sans-serif">Mgmt Studio</text></svg>SSMS</div>
+          <div class="tech-logo-item"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#007ACC"/><path d="M5 16l6-6-6-6M11 18h8" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>VS Code</div>
         </div>
       </div>
       <div class="modal-section">
         <div class="ms-title">Compétences BTS SIO acquises</div>
         <ul class="modal-list">
+          <li>1.1 – Recenser et identifier les ressources numériques</li>
+          <li>1.3 – Mettre en place et vérifier les niveaux d'habilitation associés à un service</li>
           <li>2.3 – Traiter des demandes concernant les applications</li>
-          <li>4.1 – Analyser les objectifs et les modalités d'un projet</li>
+          <li>3.3 – Participer à l'évolution d'un site Web exploitant les données de l'organisation</li>
+          <li>4.1 – Analyser les objectifs et les modalités d'organisation d'un projet</li>
           <li>4.2 – Planifier les activités</li>
-          <li>4.3 – Évaluer les indicateurs de suivi d'un projet et analyser les écarts</li>
           <li>5.1 – Réaliser les tests d'intégration et d'acceptation d'un service</li>
-          <li>5.2 – Déployer un service</li>
         </ul>
+      </div>
+      <div class="modal-section modal-download-section">
+        <button class="modal-download-btn" onclick="downloadReport('Projet ADA PHP.pdf')">📥 Télécharger le compte rendu</button>
       </div>
     </div>
   </div>

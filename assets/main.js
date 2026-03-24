@@ -20,7 +20,42 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelec
 function downloadCV(e){
   if(e)e.preventDefault();
   const a=document.createElement('a');
-  a.href='assets/cv.pdf';
+  a.href='assets/pdf/cv.pdf';
   a.download='assets/cv.pdf';
   document.body.appendChild(a);a.click();document.body.removeChild(a);
+}
+
+function openLightbox(src, caption) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox-caption').textContent = caption;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(e) {
+  if (e && e.target !== document.getElementById('lightbox') && !e.target.classList.contains('lightbox-close')) return;
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Téléchargement comptes rendus
+function downloadReport(filename){
+  const a=document.createElement('a');
+  a.href='assets/pdf/compterendu/'+filename;
+  a.download=filename;
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+}
+ 
+// Lightbox
+function openLightbox(src, caption) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox-caption').textContent = caption;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+ 
+function closeLightbox(e) {
+  if (e && e.target !== document.getElementById('lightbox') && !e.target.classList.contains('lightbox-close')) return;
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
 }
